@@ -1,0 +1,1720 @@
+
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <title>Homepage</title>
+      <link rel="stylesheet" href="./css/header-footer-others.css">
+      <link rel="stylesheet" href="./css/activity-type.css">
+      <link rel="stylesheet" href="./css/sign-up.css">
+      
+      <!-- <link rel="stylesheet" href="./css/blog-details.css"> -->
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+      <script
+        defer
+        src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+      ></script>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+             <h3 class="heading-for-signup"> Sign up for gochigmaglur.com</h3>
+             <div class="form-section">
+                <form>
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" required>
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name" required>
+                      </div>
+                    </div>
+                    <div class="form-group  mt-4">
+                        
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                    </div>
+                    <div class="input-group my-4 ">
+                        
+                        <input type="password" class="form-control" id="form-password" placeholder="Password" required>
+                        <div class="input-group-append"  onclick="changeAttributeOfInput()">
+                          <span class="input-group-text"><img src="./images/eye.svg" alt=""></span>
+                          <span class="eye-cross">/</span>
+                        </div>
+                    </div>
+      
+                    <div class="row">
+                        <div class="col-2 col-md-1 modal-checkbox">
+                            <div class="form-group">
+                                <input type="checkbox" id="html" required>
+                                <label for="html"></label>
+                              </div>
+                        </div>
+                        <div class="col-10 col-md-11">
+                            <p class="terms-para">
+                                Yes, sign me up to recieve information about new tours, attractions, deals and discounts. I can unsubscribe at any time at www.gochikmagalur.com / unsubscribe or by sending an email to unsubscribe@gochikmagalur.com
+                            </p>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn form-submit-button w-100">Create Account</button>
+                    <p class="special-para">By creating an account, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+                  </form>
+             </div>
+            </div>
+            <div class="modal-footer ">
+              <p class="special-para special-para-2">Alredy have an account? <a href="#"> Log in</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <header class="navbar-light fixed-top bg-white" >
+            <nav class="navbar navbar-expand-lg   container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png"  alt="" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item top-link">
+                      <a class="nav-link" href="#"><img src="./images/hotels.svg" class="nav-imgs" alt=""> hotels</a>
+                    </li>
+                    <li class="nav-item top-link">
+                      <a class="nav-link" href="#"><img src="./images/homestay.svg" class="nav-imgs" alt="">Homestays</a>
+                    </li>
+                    <li class="nav-item top-link">
+                        <a class="nav-link" href="#"><img src="./images/explore.svg" class="nav-imgs" alt="">explore</a>
+                      </li>
+                      <li class="nav-item top-link">
+                        <a class="nav-link" href="#"  data-toggle="modal" data-target="#exampleModal"><img src="./images/signin.svg" class="nav-imgs" alt="">signin</a>
+                      </li>
+                      <li class="nav-item top-link dropmenu">
+                        <a class="nav-link drpbtn" href="#"><img src="./images/help.svg" class="nav-imgs" alt="">help</a>
+                        <div class="dropmenu-content animate__animated animate__fadeInDownn">
+                          <a href="#">Traveller Help</a>
+                          <a href="#">Contact Us</a>
+        
+                          <!-- <a href="#">Property Manager Help </a> -->
+                          <a href="#" class="property-button">List Your Property</a>
+                        </div>
+                      </li>
+                      <li class="nav-item top-link">
+                        <select class="selectpicker">
+                          <option selected data-content='<img src="./images/currency.svg" alt="" class="currency-image"><span> INR </span>'><img src="./images/currency.svg" alt="" class="currency-image">INR</option>
+                          <option data-content='<img src="./images/currency.svg" alt="" class="currency-image"> <span style="color: #222222;  font-family: "Roboto", sans-serif; font-size: 14px; align-items: center;"> USD </span>'>USD</option>
+                          <option data-content='<img src="./images/currency.svg" alt="" class="currency-image"><span> EUR </span>'>EUR</option>
+                        </select>
+                        
+                      </li>
+        
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./images/currency.svg" alt="" class="currency-image"> currency
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"> <img src="./images/currency.svg" alt="" class="currency-image"> India</a>
+                        <a class="dropdown-item" href="#">
+                            <img src="./images/currency.svg" alt="" class="currency-image">dubai</a>
+                       
+                        <a class="dropdown-item" href="#">
+                            <img src="./images/currency.svg" alt="" class="currency-image">Usa</a>
+                      </div>
+                    </li> -->
+                    <!-- <li class="nav-item property">
+                      <a class="nav-link property-button" href="./list-your-property.html" >list your property</a>
+                    </li> -->
+                  </ul>
+                  
+                </div>
+              </nav>
+        </header>
+    
+        <main style="margin-top: 84px;">
+            <div class="banner container-fluid ">
+                <div class="text-heading">
+                    <h3 class="text-white heading">
+                        Activities
+                    </h3>
+                    <div class="anchors">
+                      <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./hotels.html">Activities</a></li>
+                      </ul>
+                    </div>
+            
+                </div>
+                <div class="social-top">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="social-iton-top">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                    <li>
+                      <a href="#" class="social-iton-top">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                    <li>
+                      <a href="#" class="social-iton-top">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  </ul>
+                </div>
+            </div>
+
+
+            <section class="top-container-block">
+                <div class="container">
+                    <h3 class="popular-hotels-heading">Things to Do in Chikmagalur</h3>
+                  <p class="popular-hotels-para">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+                  </p>
+                    <div class="up-gallery">
+                        <div class="row mx-0 up-gallery-row justify-content-center" id="gallery">
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="card-up all  waterfall">
+                                    <div class="up-gallery-image-content">
+                                        <img data-src="./images/camp.png" alt="">
+                                    </div>
+                                    <div class="card-lower-body">
+                                        <a href="#" class="text-decoration-none">
+                                            <h3 class="card-body-title">Sakleshpur Camping</h3>
+                                            
+                                        </a>
+                                        <p class="card-body-para">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quae doloremque praesentium exercitationem voluptas, ut facilis? Eos maiores est eius?
+                                        </p>
+    
+                                        <div class="stars-div">
+                                            <span class="stars">
+                                              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                            </span>
+                                           </div>
+                                           <div class="row align-items-center mx-0">
+                                            <div class="cost card-cost">
+                                              <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                              <img  data-src="./images/rupees-red.svg" alt="">
+                                              <span >2500 | Night</span>
+                                            </div>
+                                            <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                          </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="card-up all waterfall">
+                                    <div class="up-gallery-image-content">
+                                        <img data-src="./images/explore-2.png" alt="">
+                                    </div>
+                                    <div class="card-lower-body">
+                                        <a href="#" class="text-decoration-none">
+                                            <h3 class="card-body-title">Sakleshpur Camping</h3>
+                                            
+                                        </a>
+                                        <p class="card-body-para">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quae doloremque praesentium exercitationem voluptas, ut facilis? Eos maiores est eius?
+                                        </p>
+    
+                                        <div class="stars-div">
+                                            <span class="stars">
+                                              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                            </span>
+                                           </div>
+                                           <div class="row align-items-center mx-0">
+                                            <div class="cost card-cost">
+                                              <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                              <img  data-src="./images/rupees-red.svg" alt="">
+                                              <span >2500 | Night</span>
+                                            </div>
+                                            <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                          </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="card-up all waterfall">
+                                    <div class="up-gallery-image-content">
+                                        <img data-src="./images/explore-1.png" alt="">
+                                    </div>
+                                    <div class="card-lower-body">
+                                        <a href="#" class="text-decoration-none">
+                                            <h3 class="card-body-title">Sakleshpur Camping</h3>
+                                            
+                                        </a>
+                                        <p class="card-body-para">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quae doloremque praesentium exercitationem voluptas, ut facilis? Eos maiores est eius?
+                                        </p>
+    
+                                        <div class="stars-div">
+                                            <span class="stars">
+                                              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                            </span>
+                                           </div>
+                                           <div class="row align-items-center mx-0">
+                                            <div class="cost card-cost">
+                                              <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                              <img  data-src="./images/rupees-red.svg" alt="">
+                                              <span >2500 | Night</span>
+                                            </div>
+                                            <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                          </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="card-up all heritage">
+                                    <div class="up-gallery-image-content">
+                                        <img data-src="./images/explore-3.png" alt="">
+                                    </div>
+                                    <div class="card-lower-body">
+                                        <a href="#" class="text-decoration-none">
+                                            <h3 class="card-body-title">Sakleshpur Camping</h3>
+                                            
+                                        </a>
+                                        <p class="card-body-para">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quae doloremque praesentium exercitationem voluptas, ut facilis? Eos maiores est eius?
+                                        </p>
+    
+                                        <div class="stars-div">
+                                            <span class="stars">
+                                              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                            </span>
+                                           </div>
+                                           <div class="row align-items-center mx-0">
+                                            <div class="cost card-cost">
+                                              <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                              <img  data-src="./images/rupees-red.svg" alt="">
+                                              <span >2500 | Night</span>
+                                            </div>
+                                            <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                          </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="card-up all watersports">
+                                    <div class="up-gallery-image-content">
+                                        <img data-src="./images/explore-3.png" alt="">
+                                    </div>
+                                    <div class="card-lower-body">
+                                        <a href="#" class="text-decoration-none">
+                                            <h3 class="card-body-title">Sakleshpur Camping</h3>
+                                            
+                                        </a>
+                                        <p class="card-body-para">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quae doloremque praesentium exercitationem voluptas, ut facilis? Eos maiores est eius?
+                                        </p>
+    
+                                        <div class="stars-div">
+                                            <span class="stars">
+                                              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                            </span>
+                                           </div>
+                                           <div class="row align-items-center mx-0">
+                                            <div class="cost card-cost">
+                                              <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                              <img  data-src="./images/rupees-red.svg" alt="">
+                                              <span >2500 | Night</span>
+                                            </div>
+                                            <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                          </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                              <div class="card-up all watersports">
+                                  <div class="up-gallery-image-content">
+                                      <img data-src="./images/explore-3.png" alt="">
+                                  </div>
+                                  <div class="card-lower-body">
+                                      <a href="#" class="text-decoration-none">
+                                          <h3 class="card-body-title">Sakleshpur Camping</h3>
+                                          
+                                      </a>
+                                      <p class="card-body-para">
+                                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quae doloremque praesentium exercitationem voluptas, ut facilis? Eos maiores est eius?
+                                      </p>
+    
+                                      <div class="stars-div">
+                                          <span class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                          </span>
+                                      </div>
+                                         <div class="row align-items-center mx-0">
+                                          <div class="cost card-cost">
+                                            <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                            <img  data-src="./images/rupees-red.svg" alt="">
+                                            <span >2500 | Night</span>
+                                          </div>
+                                          <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                        </div>
+                                  </div>
+                              </div>
+    
+                          </div>
+                          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                            <div class="card-up all sightseing">
+                                <div class="up-gallery-image-content">
+                                    <img data-src="./images/explore-3.png" alt="">
+                                </div>
+                                <div class="card-lower-body">
+                                    <a href="#" class="text-decoration-none">
+                                        <h3 class="card-body-title">Sakleshpur Camping</h3>
+                                        
+                                    </a>
+                                    <p class="card-body-para">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quae doloremque praesentium exercitationem voluptas, ut facilis? Eos maiores est eius?
+                                    </p>
+    
+                                    <div class="stars-div">
+                                        <span class="stars">
+                                          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                        </span>
+                                    </div>
+                                       <div class="row align-items-center mx-0">
+                                        <div class="cost card-cost">
+                                          <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                          <img  data-src="./images/rupees-red.svg" alt="">
+                                          <span >2500 | Night</span>
+                                        </div>
+                                        <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                      </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                          <div class="card-up all sightseing">
+                              <div class="up-gallery-image-content">
+                                  <img data-src="./images/explore-3.png" alt="">
+                              </div>
+                              <div class="card-lower-body">
+                                  <a href="#" class="text-decoration-none">
+                                      <h3 class="card-body-title">Sakleshpur Camping</h3>
+                                      
+                                  </a>
+                                  <p class="card-body-para">
+                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quae doloremque praesentium exercitationem voluptas, ut facilis? Eos maiores est eius?
+                                  </p>
+    
+                                  <div class="stars-div">
+                                      <span class="stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                      </span>
+                                  </div>
+                                     <div class="row align-items-center mx-0">
+                                      <div class="cost card-cost">
+                                        <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                        <img  data-src="./images/rupees-red.svg" alt="">
+                                        <span >2500 | Night</span>
+                                      </div>
+                                      <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                    </div>
+                              </div>
+                          </div>
+    
+                      </div>
+                      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="card-up all treking">
+                            <div class="up-gallery-image-content">
+                                <img data-src="./images/explore-3.png" alt="">
+                            </div>
+                            <div class="card-lower-body">
+                                <a href="#" class="text-decoration-none">
+                                    <h3 class="card-body-title">Sakleshpur Camping</h3>
+                                    
+                                </a>
+                                <p class="card-body-para">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quae doloremque praesentium exercitationem voluptas, ut facilis? Eos maiores est eius?
+                                </p>
+    
+                                <div class="stars-div">
+                                    <span class="stars">
+                                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                    </span>
+                                </div>
+                                   <div class="row align-items-center mx-0">
+                                    <div class="cost card-cost">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <img  data-src="./images/rupees-red.svg" alt="">
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                                <div class="card-up all treking">
+                                    <div class="up-gallery-image-content">
+                                        <img data-src="./images/explore-3.png" alt="">
+                                    </div>
+                                    <div class="card-lower-body">
+                                        <a href="#" class="text-decoration-none">
+                                            <h3 class="card-body-title">Sakleshpur Camping</h3>
+                                            
+                                        </a>
+                                        <p class="card-body-para">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quae doloremque praesentium exercitationem voluptas, ut facilis? Eos maiores est eius?
+                                        </p>
+    
+                                        <div class="stars-div">
+                                            <span class="stars">
+                                              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                                            </span>
+                                        </div>
+                                           <div class="row align-items-center mx-0">
+                                            <div class="cost card-cost">
+                                              <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                              <img  data-src="./images/rupees-red.svg" alt="">
+                                              <span >2500 | Night</span>
+                                            </div>
+                                            <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                          </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div> 
+                        <div class="loadmore-button d-flex justify-content-center align-items-center">
+                          <a href="#" class="top-load-btn">Load more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+              <div class="container">
+                <div class="popular-hotels">
+                  <h3 class="popular-hotels-heading">Things to Do in Chikmagalur</h3>
+                  <p class="popular-hotels-para">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+                  </p>
+                
+                <section>
+                  <div class="carousel-section">
+                      
+                      <section class="featured">
+                          
+                          <section class="second-carousel ">
+                            <section class="featured-excursions">
+                              <div class="">
+                                
+                        
+                                <div id="page-wrapper ">
+                                  <div class="post-slider">
+                                  
+                                    <div class="navigation">
+                                      <div
+                                      class="prev2"
+                                      
+                                    >
+                                    <i class="fas fa-chevron-left"></i>
+                                    </div>
+                        
+                                    <div
+                                      class="next2"
+                                      
+                                    >
+                                    
+                                    <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    </div>
+                                    <div class="post-wrapper carousel2">
+                                      <div class="post">
+                                        <div class="post-img" style="position: relative;">
+                                          <img
+                                            class="img1"
+                                            data-src="./images/acti1.png" 
+                                           
+                                          />
+                                          <div class="inside-image">
+                                            <div class="row align-items-center mx-0">
+                                              <div class="cost">
+                                                <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                                <img src="./images/rupees.svg" alt="">
+                                                <span >2500 | Night</span>
+                                              </div>
+                                              <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                            </div>
+                                            <div class="row mx-0">
+                                              <a href="#" class="text-decoration-none text-white">
+                                                <span class="card-title-name">Coffee Estate Homestay in Chikmagalur</span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="right-label">
+                                            <img src="./images/label-red.svg" alt="" class="label-image">
+                                            <span>15% OFF</span>
+                                          </div>
+                                        
+                                        </div>
+                        
+                                        <div class="post-title ">
+                                         
+                                         
+                                        
+                                        </div>
+                                        
+                                      </div>
+                        
+                                      <div class="post">
+                                        <div class="post-img">
+                                          <img
+                                          class="img1"
+                                          data-src="./images/acti2.png" 
+                                        />
+                        
+                                        <div class="inside-image">
+                                          <div class="row align-items-center mx-0">
+                                            <div class="cost">
+                                              <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                              <img src="./images/rupees.svg" alt="">
+                                              <span >2500 | Night</span>
+                                            </div>
+                                            <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                          </div>
+                                          <div class="row mx-0">
+                                            <a href="#" class="text-decoration-none text-white">
+                                              <span class="card-title-name">Coffee Estate Homestay in Chikmagalur</span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="right-label">
+                                          <img src="./images/label-red.svg" alt="" class="label-image">
+                                          <span>15% OFF</span>
+                                        </div>
+                                        </div>
+                        
+                                        <div class="post-title ">
+                                          
+                                         
+                                         
+                                         </div>
+                                        
+                                      </div>
+                        
+                                      <div class="post">
+                                        <div class="post-img">
+                                          <img
+                                          class="img1"
+                                          data-src="./images/featured-3.png" 
+                                        />
+                                        <div class="inside-image">
+                                          <div class="row align-items-center mx-0">
+                                            <div class="cost">
+                                              <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                              <img src="./images/rupees.svg" alt="">
+                                              <span >2500 | Night</span>
+                                            </div>
+                                            <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                          </div>
+                                          <div class="row mx-0">
+                                            <a href="#" class="text-decoration-none text-white">
+                                              <span class="card-title-name">Coffee Estate Homestay in Chikmagalur</span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                        <div class="right-label">
+                                          <img src="./images/label-red.svg" alt="" class="label-image">
+                                          <span>15% OFF</span>
+                                        </div>
+                                         
+                                        </div>
+                        
+                                        <div class="post-title ">
+                                         
+                                         </div>
+                                         
+                                      </div>
+                        
+                                      <div class="post">
+                                        <div class="post-img">
+                                          <img
+                                            class="img1"
+                                            data-src="./images/featured-4.png" 
+                                          />
+                        
+                                          <div class="inside-image">
+                                            <div class="row align-items-center mx-0">
+                                              <div class="cost">
+                                                <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                                <img src="./images/rupees.svg" alt="">
+                                                <span >2500 | Night</span>
+                                              </div>
+                                              <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                            </div>
+                                            <div class="row mx-0">
+                                              <a href="#" class="text-decoration-none text-white">
+                                                <span class="card-title-name">Coffee Estate Homestay in Chikmagalur</span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="right-label">
+                                            <img src="./images/label-red.svg" alt="" class="label-image">
+                                            <span>15% OFF</span>
+                                          </div>
+                                        </div>
+                        
+                                        <div class="post-title ">
+                                         
+                                         </div>
+                                         
+                                      </div>
+                        
+                                      <div class="post">
+                                        <div class="post-img">
+                                          <img
+                                            class="img1"
+                                            data-src="./images/featured-1.png" 
+                                           
+                                          />
+                        
+                                          <div class="inside-image">
+                                            <div class="row align-items-center mx-0">
+                                              <div class="cost">
+                                                <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                                <img src="./images/rupees.svg" alt="">
+                                                <span >2500 | Night</span>
+                                              </div>
+                                              <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                            </div>
+                                            <div class="row mx-0">
+                                              <a href="#" class="text-decoration-none text-white">
+                                                <span class="card-title-name">Coffee Estate Homestay in Chikmagalur</span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="right-label">
+                                            <img src="./images/label-red.svg" alt="" class="label-image">
+                                            <span>15% OFF</span>
+                                          </div>
+                                        </div>
+                        
+                                        <div class="post-title ">
+                                         
+                                         </div>
+                                         
+                                      </div>
+                                      <div class="post">
+                                        <div class="post-img">
+                                          <img
+                                            class="img1"
+                                            data-src="./images/featured-2.png" 
+                                            
+                                          />
+                        
+                                          <div class="inside-image">
+                                            <div class="row align-items-center mx-0">
+                                              <div class="cost">
+                                                <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                                <img src="./images/rupees.svg" alt="">
+                                                <span >2500 | Night</span>
+                                              </div>
+                                              <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                            </div>
+                                            <div class="row mx-0">
+                                              <a href="#" class="text-decoration-none text-white">
+                                                <span class="card-title-name">Coffee Estate Homestay in Chikmagalur</span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="right-label">
+                                            <img src="./images/label-red.svg" alt="" class="label-image">
+                                            <span>15% OFF</span>
+                                          </div>
+                                        </div>
+                        
+                                        <div class="post-title ">
+                                         
+                                         
+                                         </div>
+                                      </div>
+                                      <div class="post">
+                                        <div class="post-img">
+                                          <img
+                                            class="img1"
+                                            data-src="./images/featured-3.png" 
+                                            
+                                          />
+                        
+                                          <div class="inside-image">
+                                            <div class="row align-items-center mx-0">
+                                              <div class="cost">
+                                                <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                                <img src="./images/rupees.svg" alt="">
+                                                <span >2500 | Night</span>
+                                              </div>
+                                              <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                            </div>
+                                            <div class="row mx-0">
+                                              <a href="#" class="text-decoration-none text-white">
+                                                <span class="card-title-name">Coffee Estate Homestay in Chikmagalur</span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="right-label">
+                                            <img src="./images/label-red.svg" alt="" class="label-image">
+                                            <span>15% OFF</span>
+                                          </div>
+                                        </div>
+                        
+                                        <div class="post-title ">
+                                         
+                                         
+                                         </div>
+                                      </div>
+                                    
+                                      <div class="post">
+                                        <div class="post-img">
+                                          <img
+                                            class="img1"
+                                            data-src="./images/featured-4.png" 
+                                            
+                                          />
+                        
+                                          <div class="inside-image">
+                                            <div class="row align-items-center mx-0">
+                                              <div class="cost">
+                                                <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                                <img src="./images/rupees.svg" alt="">
+                                                <span >2500 | Night</span>
+                                              </div>
+                                              <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                            </div>
+                                            <div class="row mx-0">
+                                              <a href="#" class="text-decoration-none text-white">
+                                                <span class="card-title-name">Coffee Estate Homestay in Chikmagalur</span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="right-label">
+                                            <img src="./images/label-red.svg" alt="" class="label-image">
+                                            <span>15% OFF</span>
+                                          </div>
+                                        </div>
+                        
+                                        <div class="post-title ">
+                                         
+                                         
+                                         </div>
+                                      </div>
+                                      <div class="post">
+                                        <div class="post-img">
+                                          <img
+                                            class="img1"
+                                            data-src="./images/holidays-1.png" 
+                                          />
+                        
+                                          <div class="inside-image">
+                                            <div class="row align-items-center mx-0">
+                                              <div class="cost">
+                                                <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                                <img  data-src="./images/rupees.svg" alt="">
+                                                <span >2500 | Night</span>
+                                              </div>
+                                              <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                            </div>
+                                            <div class="row mx-0">
+                                              <a href="#" class="text-decoration-none text-white">
+                                                <span class="card-title-name">Coffee Estate Homestay in Chikmagalur</span>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="right-label">
+                                            <img src="./images/label-red.svg" alt="" class="label-image">
+                                            <span>15% OFF</span>
+                                          </div>
+                                        </div>
+                        
+                                        <div class="post-title ">
+                                          
+                                         
+                                         </div>
+                                      </div>
+                                    </div>
+                        
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+                          </section>
+                        </section>
+                  </div>
+              </section>
+            </div>
+              </div>
+            </section>
+    
+    
+    
+    
+    
+            <section class="sorting-gallery">
+                <div class="container">
+                  <div class="inside-sorting">
+                    <!-- <div class="row mx-0 align-items-center mb-4">
+                     <div class="col-md-7 col-lg-7">
+                      <div class="title"><h3>Things to Do in Chikmagalur</h3></div>
+                     </div>
+                      <div class="col-md-5 ml-auto">
+                        <div class="options ml-auto">
+                          <div class="form-group row align-items-center">
+                            <label for="sortBy" class="col-sm-5 pr-0 col-form-label ">sort by</label>
+                            <div class="col-sm-7">
+                              <select id="sortBy" class="form-control " onchange="sortImages()">
+                                <option selected value="all">All</option>
+                                <option  value="waterfall">Waterfall</option>
+                                
+                                <option value="watersports">Watersports</option>
+                                <option value="treking">Treking</option>
+                                <option value="sightseing">Sightseing</option>
+                                <option value="heritage">Heritage</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+    
+                    
+                    <!-- <div class="pagination pagination-link justify-content-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true"><i class="fas fa-step-backward"></i></span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              
+                              
+                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+                              <li class="page-item"><a class="page-link" href="#">20</a></li>
+                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true"><i class="fas fa-step-forward"></i></span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div> -->
+    
+    
+    
+    
+                    
+    
+                    <div class="gallery-contents popular-hotels bottom-layout">
+                        <h3 class="best-homestays-heading  popular-hotels-heading">
+                            Best Experiential Homestays <br> In Chikmagalur
+                        </h3>
+                        <p class="activities-para ">
+                          We pride ourselves in assisting you with planning your vacation for a great experience followed by a lifetime of wonderful memories and remarkable moments
+                        </p>
+                      <div class="row mx-0 gallery-row">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up"
+                        >
+                          <div class="gallery-image-content">
+                            <img data-src="./images/explore-3.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up"
+                        data-aos-delay="300">
+                          <div class="gallery-image-content">
+                            <img data-src="./images/holidays-1.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up"
+                        data-aos-delay="600">
+                          <div class="gallery-image-content">
+                            <img data-src="./images/hotels-1.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up"
+                        >
+                          <div class="gallery-image-content">
+                            <img data-src="./images/hotels-2.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up"
+                        data-aos-delay="300">
+                          <div class="gallery-image-content">
+                            <img data-src="./images/explore-2.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                          <div class="gallery-image-content">
+                            <img data-src="./images/featured-1.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                          <div class="gallery-image-content">
+                            <img data-src="./images/featured-2.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                          <div class="gallery-image-content">
+                            <img data-src="./images/explore-2.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                          <div class="gallery-image-content">
+                            <img data-src="./images/explore-3.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="00">
+                          <div class="gallery-image-content">
+                            <img data-src="./images/explore-1.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                          <div class="gallery-image-content">
+                            <img data-src="./images/explore-1.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="600">
+                          <div class="gallery-image-content load-sec">
+                            <img data-src="./images/explore-1.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="00">
+                          <div class="gallery-image-content load-sec">
+                            <img data-src="./images/explore-1.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="300">
+                          <div class="gallery-image-content load-sec">
+                            <img data-src="./images/explore-1.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="600">
+                          <div class="gallery-image-content load-sec">
+                            <img data-src="./images/explore-1.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="00">
+                          <div class="gallery-image-content load-sec">
+                            <img data-src="./images/explore-1.png" alt="">
+                            <div class="right-label">
+                                <img src="./images/label-red.svg" alt="" class="label-image">
+                                <span>15% OFF</span>
+                              </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-center mx-0">
+                                    <div class="cost d-flex align-items-center ">
+                                      <!-- <div class="icon"><i class="fas fa-rupee-sign"></i></div> -->
+                                      <div class="rupees-icon mr-2"><i class="fas fa-rupee-sign "></i></div>
+                                      <span >2500 | Night</span>
+                                    </div>
+                                    <div class="booknow ml-auto"><a href="#">Book Now</a></div>
+                                  </div>
+                              <a href="#"><h6 class="gallery-name">Homestay with Private Waterfall</h6></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+        
+                      <div class="loadmore-button d-flex justify-content-center align-items-center">
+                        <a href="#" class="load-btn">Load more</a>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+              </section>
+    
+           
+           <section class="below-hotels top">
+            <div class="container">
+              <div class=" popular-hotels">
+                <h3 class="popular-hotels-heading">Popular Hotels</h3>
+                <p class="activities-para ">
+                  We pride ourselves in assisting you with planning your vacation for a great experience followed by a lifetime of wonderful memories and remarkable moments
+                </p>
+                <section class="featured-packages">
+                  <div class="">
+                    
+            
+                    <div class="page-wrapper ">
+                      <div class="post-slider">
+                        <div class="navigation-mid">
+                          <div
+                          class="prev"
+                          
+                        >
+                        <i class="fas fa-chevron-left"></i>
+                        </div>
+            
+                        <div
+                          class="next"
+                          
+                        >
+                        
+                        <i class="fas fa-chevron-right"></i>
+                        </div>
+                        </div>
+            
+                        <div class="post-wrapper carousel1">
+                          <div class="post">
+                            <div class="post-img">
+                              <img
+                                class="img1"
+                                data-src="./images/holidays-1.png"  
+                              />
+            
+                              
+                            </div>
+                            <div class="post-titles">
+                              <a href="#"><h3 class="hotelname">Hotel Name</h3></a>
+                              <p class="hotel-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+                              <h5 class="nights">2500 / Night</h5>
+                              <span>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                              </span>
+                            </div>
+            
+                           
+                          </div>
+            
+                          <div class="post">
+                            <div class="post-img">
+                              <img
+                              class="img1"
+                              data-src="./images/holidays-2.png" 
+                            />
+            
+                             
+                            </div>
+                            <div class="post-titles">
+                              <a href="#"><h3 class="hotelname">Hotel Name</h3></a>
+                              <p class="hotel-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+                              <h5 class="nights">2500 / Night</h5>
+                              <span>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                              </span>
+                            </div>
+            
+                            
+                          </div>
+            
+                          <div class="post">
+                            <div class="post-img">
+                              <img
+                                class="img1"
+                                data-src="./images/featured-4.png" 
+                              />
+            
+                            </div>
+                            <div class="post-titles">
+                              <a href="#"><h3 class="hotelname">Hotel Name</h3></a>
+                              <p class="hotel-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+                              <h5 class="nights">2500 / Night</h5>
+                              <span>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                              </span>
+                            </div>
+            
+                          
+                          </div>
+            
+                          <div class="post">
+                            <div class="post-img">
+                              <img
+                                class="img1"
+                                data-src="./images/featured-3.png" 
+                              />
+            
+                             
+                            </div>
+                            <div class="post-titles">
+                              <a href="#"><h3 class="hotelname">Hotel Name</h3></a>
+                              <p class="hotel-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+                              <h5 class="nights">2500 / Night</h5>
+                              <span>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                              </span>
+                            </div>
+            
+                          </div>
+            
+                          <div class="post">
+                            <div class="post-img">
+                              <img
+                                class="img1"
+                                data-src="./images/featured-1.png" 
+                              />
+            
+                            </div>
+                            <div class="post-titles">
+                              <a href="#"><h3 class="hotelname">Hotel Name</h3></a>
+                              <p class="hotel-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+                              <h5 class="nights">2500 / Night</h5>
+                              <span>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                              </span>
+                            </div>
+            
+                           
+                          </div>
+                          <div class="post">
+                            <div class="post-img">
+                              <img
+                                class="img1"
+                                data-src="./images/explore-1.png" 
+                              />
+            
+                             
+                            </div>
+                            <div class="post-titles">
+                              <a href="#"><h3 class="hotelname">Hotel Name</h3></a>
+                              <p class="hotel-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+                              <h5 class="nights">2500 / Night</h5>
+                              <span>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                              </span>
+                            </div>
+            
+                           
+                          </div>
+                          <div class="post">
+                            <div class="post-img">
+                              <img
+                                class="img1"
+                                data-src="./images/explore-2.png" 
+                              />
+            
+                             
+                            </div>
+                            <div class="post-titles">
+                              <a href="#"><h3 class="hotelname">Hotel Name</h3></a>
+                              <p class="hotel-para">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+                              <h5 class="nights">2500 / Night</h5>
+                              <span>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 
+                              </span>
+                            </div>
+            
+                            
+                            
+                          </div>
+                        </div>
+            
+                        
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                
+              
+               
+                
+                 
+              </div>
+            </div>
+    
+            
+          
+                </section>
+              </section> 
+    
+    
+    
+    
+    
+    
+            </div>
+            </div>
+           </section>
+    
+    
+    
+           
+          
+    
+          
+           
+        </main>
+    
+    
+    <footer class="footer">
+        <div class="container">
+          <div class="row mx-0">
+            <div class="logo-footer col-sm-12 col-md-5 col-lg-4 col-xl-3">
+              <img src="./images/logo-footer.png" class="w-100" alt="">
+            </div>
+            <div class="social">
+              <a href="#" class="social-icon-bottom">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="social-icon-bottom">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon-bottom">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            
+          </div>
+          <div class="row mx-0 Links-all">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="col-heading contact">
+                Contact Info
+              </div>
+              <div class="contact-info ">
+                <div class="row mx-0">
+                  <div class="col-1 pl-0"><img src="./images/footer-loc.svg" alt=""></div>
+                  <div class="col-md-8 col-10 col-sm-10 ">
+                    <h6 class="text">Akshya Nagar 1st Block 1st Cross, 
+                      Rammurthy nagar, Bangalore-560016 </h6>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="contact-info ">
+                <div class="row mx-0">
+                  <div class="col-1 pl-0"><img src="./images/footer-call.svg" alt=""></div>
+                  <div class="col-8">
+                    <h6 class="text">0091 258 666 66 </h6>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="contact-info ">
+                <div class="row mx-0">
+                  <div class="col-1 pl-0"><img src="./images/footer-mail.svg" alt=""></div>
+                  <div class="col-8">
+                    <h6 class="text">info@gochikmagalur.com</h6>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="contact-info ">
+                <div class="row mx-0">
+                  <div class="col-1 pl-0"><img src="./images/footer-s.svg" alt=""></div>
+                  <div class="col-8">
+                    <h6 class="text">go.chikmagalur</h6>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
+              <div class="col-heading links">
+                Quick Links
+              </div>
+              <div>
+                <ul class="list-unstyled quick-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Rooms</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">Career</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
+              <div class="col-heading links">
+                Quick Links
+              </div>
+              <div>
+                <ul class="list-unstyled quick-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Rooms</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">Career</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <div class="social-mobile">
+                <img src="./images/insta.svg" alt="">
+                <img src="./images/twitter.svg" alt="">
+                <img src="./images/fb.svg" alt="">
+              </div>
+              <div class="col-heading newsletter">
+                Newsletter
+              </div>
+              <div class="newsletter-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy e
+                </p>
+                <div class="row mx-0 ">
+                  <div class="col-sm-12 col-md-8 px-0 mb-3">
+                    <form  id="newsletter" onsubmit="showMessage()">
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                    <img src="./images/email.png" class="email-icon" id="emailImg" alt="">
+                  </div>
+                  <div class="col-sm-12 col-md-4 px-0 px-md-2">
+                    <button class="btn send" type="submit">Send</button>
+                  </div>
+                    </form>
+                </div>
+                <div class="image-card-heading">
+                  Accepted Cards
+                </div>
+                <div class="cards-image">
+                  <img src="./images/american.svg" alt="">
+                  <img src="./images/visa.svg" alt="">
+                  <img src="./images/master.svg" alt="">
+                  <img src="./images/paypal.svg" alt="">
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col copywright">
+            Copyright ©gochikmagalur All rights reserved
+          </div>
+        </div>
+      </footer>
+          
+      
+      
+      
+       <a href="#" class="crunchify-top">↑</a>
+      
+          
+       <div class="message-box">
+         <h6 class="message-text"></h6>
+       </div>
+       
+       
+       <!-- <div class="alert alert-dismissible text-center cookiealert show" role="alert">
+         <div class="cookiealert-container">
+              We use cookies to ensure you get the best experience on our website. <a href="#" target="_blank" >Learn more</a>
+       
+             <button type="button" class="btn btn-success btn-sm acceptcookies" aria-label="Close">
+                Ok
+             </button>
+         </div>
+       </div> -->
+       
+       
+       <!-- <input type="text" name="dates"> -->
+          <!-- bootstrap -->
+          <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+          <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+       
+       
+          <!-- end -->
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!--      
+         <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+           <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+          
+        -->
+       <!-- <script src="./js/carousel.js"></script> -->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script src="./js/activity-type.js"></script>
+       <script src="./js/signup.js"></script>
+      
+       <script>
+           AOS.init();
+           lazyLoadInstance.update();
+       </script>
+      </body>
+      
+      </body>
+      </html>

@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.currency-image{
+    height: 19px;
+    width: 28px;
+    margin-right: 6px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    /* letter-spacing: -0.5px; */
+    align-items: center;
+   
+    text-transform: capitalize;
+    display: flex;
+    
+}
+.navbar-brand img{
+    width: 200px;
+    /* height: 70px; */
+}
+li.nav-item {
+    box-sizing: border-box;
+    /* height: 30px; */
+    border: 1px solid transparent;
+}
+li.top-link:hover{
+    border: 1px solid green;
+    border-radius: 10px;
+}
+/* .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  } */
+  
+  .dropmenu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropmenu-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all linear 0.4s;
+    right: 0;
+    border: 2px solid green;
+    border-radius: 10px;
+    top: 39px;
+    font-size: 14px;
+    color: #222222;
+    animation-duration: 0.5s !important;
+    
+  }
+  .animate__fadeInDownn {
+    -webkit-animation-name: fadeInDownn;
+    animation-name: fadeInDownn;
+}
+  @keyframes fadeInDownn{
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-30%,0);
+        transform: translate3d(0,-30%,0);
+    }
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+  }
+  .dropmenu-content a {
+    color: #222222;
+    padding: 3px 7px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    margin: 3px;
+  }
+  .dropmenu-content a:hover{
+    border: 1px solid green;
+  }
+  
+  .dropmenu-content a:hover {
+      background-color: #fff;
+    }
+  
+  .dropmenu:hover .dropmenu-content {
+      display: block;
+    }
+  
+  .dropmenu:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+    a.property-button{
+        color: #fff;
+        background-color: #098240;
+        width: 143px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+    a.property-button:hover{
+        background-color: #707070;
+        color: #fff;
+    }
+
+@media (min-width:400px){
+    .navbar-brand img{
+        width: 245px;
+        height: 58px;
+    }  
+}
+@media (min-width:1000px) and (max-width:1200px){
+    .navbar-brand img{
+        width: 202px;
+        /* height: 70px; */
+    }  
+}
+    
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/hamburger.svg);
+}
+button:focus {
+    outline: 1px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+.nav-imgs{
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+}
+a.nav-link.property-button {
+    background-color: #098240;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #ffffff !important;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 5px;
+    min-height: 40px;
+    text-align: center;
+    padding: 3px 10px;
+}
+.property{
+    width: 143px;
+    text-align: center;
+    display: flex;
+}
+nav.navbar.navbar-expand-lg.container{
+    max-width: 1200px !important;
+}
+@media (min-width: 1200px) and (max-width:1600px){
+    .container, 
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container-xl {
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    li.nav-item{
+        margin-right: 20px;
+    }
+}
+@media (min-width: 1601px)  {
+    .container, 
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container-xl {
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    li.nav-item{
+        margin-right: 20px;
+    }
+}
+.mid-icon{
+    margin-left: 20px;
+    margin-right: 20px;
+}

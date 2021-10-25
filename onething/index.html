@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Onething Frontend Assignment</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#"><img src="./images/Logo.png" class="navLogo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Track Application <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manage My Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item getStarted">
+                        <a class="nav-link text-white" href="#">Get Started</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="getStartedSection">
+            <div class="container">
+                <div class="row theGetStartedRow">
+                    <div class="col-md-5 col-lg-6 getStartedTextCol">
+                        <div class="insideGetStartedTextCol">
+                            <h3 class="getStartedLargeHeading">
+                                Build a Credit Card
+                                That is Definitely Yours
+                            </h3>
+                            <p class="getStartedPara">
+                                With the OneSync Credit Card you can customise your card the way you want
+                            </p>
+                            <button class="btn getStartedBtn">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-6 getStartedImage">
+                        <div class="getStartedImgCont">
+                            <img src="./images/gif.png" alt="MasterCard">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="freedomCreate">
+            <div class="container">
+                <div class="row FreedomRow">
+                    <div class="col-md-6 freedomLeftCol">
+                        <div class="insideFreedomLeftRow">
+                            <h3 class="largeHeading text-white leftHeading">
+                                The Freedom to Create <br>
+                                The Credit Card You Want
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 freeDomRightCol" >
+                        <div class="insideFreedomRightCol" >
+                            <p class="freedomPara mb-4 mb-md-3">
+                                That's why it comes with benefits & rewards chosen by you. Available in multiple designs, your card comes in a style
+                                selected by you. You can come back each year, to edit your benefits or update your style.
+                            </p>
+                            <p class="freedomPara d-md-block d-none">
+                                Your OneSync Credit Card stays true to you, year after year. It’s the only card you’ll ever need.
+                            </p>
+                            
+                            <a href="#" class="getStartedAnchor">get started 
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.29094 5.2924C8.68146 4.90188 9.31463 4.90188 9.70515 5.2924L15.7052 11.2924C16.0957 11.6829 16.0957 12.3161 15.7052 12.7066L9.70515 18.7066C9.31463 19.0971 8.68146 19.0971 8.29094 18.7066C7.90042 18.3161 7.90042 17.6829 8.29094 17.2924L13.5838 11.9995L8.29094 6.70662C7.90042 6.31609 7.90042 5.68293 8.29094 5.2924Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                            <form id="getStartedForm">
+                                
+                                <div class="form-group">
+                                    <label for="getStartedSlect">Check if the card is available in your city</label>
+                                    <select class="form-control" id="getStartedSlect">
+                                        <option>Silchar</option>
+                                        <option>Delhi</option>
+                                        <option>Banglore</option>
+                                        <option>Hyderabad</option>
+                                        <option>Patna</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn go-btn">Go</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="eligibilitySection">
+            <div class="container">
+                <div class="row eligibilityRow">
+                    <div class="col-md-6 eligibilityFormCol">
+                        <div class="insideeligibilityFormCol">
+                            <form >
+                                <div class="form-group">
+                                    
+                                    <input type="number" class="form-control" id="phoneNumber" aria-describedby="emailHelp" placeholder="Enter your phone number">
+                                    
+                                </div>
+                                <div class="form-group">
+                                    
+                                    <input type="text" class="form-control" id="panNumber" aria-describedby="emailHelp" placeholder="Enter your PAN number">
+                                    
+                                </div>
+                                <div class="form-group">
+                                    
+                                    <input type="email" class="form-control" id="emailAdd" aria-describedby="emailHelp" placeholder="Enter your Address">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 colFOrMobile">
+                        <div class="insideColForMobile">
+                            <p class="fillFormParaMob">
+                                Create your own credit card in three easy steps
+                            </p>
+                            <div class="randomPosBtns">
+                                <div class="ramdomPosButton pos1">Gender</div>
+                                <div class="ramdomPosButton pos2">Address</div>
+                                <div class="ramdomPosButton pos3">Email Address</div>
+                                <div class="ramdomPosButton pos4">city</div>
+                                <div class="ramdomPosButton pos5">Phone Number</div>
+                                <div class="ramdomPosButton pos6 ">PAN Card</div>
+                                <div class="ramdomPosButton pos7">name</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fillFormTextCol">
+                        <div class="insideFillFormText">
+                            <div class="fillFormIcon">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M52 64H12C5.372 64 0 58.628 0 52V12C0 5.372 5.372 0 12 0H52C58.628 0 64 5.372 64 12V52C64 58.628 58.628 64 52 64Z"
+                                        fill="white" />
+                                    <path
+                                        d="M35 16H19.666C17.64 16 16 17.64 16 19.666V40.332C16 42.36 17.64 44 19.666 44H30.532C29.412 42.226 28.666 40.134 28.666 37.734V34.48C28.466 34.6 28.24 34.666 28 34.666H21.334C20.6 34.666 20 34.066 20 33.332C20 32.598 20.6 32 21.334 32H28C28.254 32 28.48 32.066 28.68 32.186C28.734 31.052 29.266 30.012 30.106 29.332H21.332C20.6 29.334 20 28.734 20 28C20 27.266 20.6 26.666 21.334 26.666H33.334C33.894 26.666 34.374 27.012 34.574 27.506L38.374 26.212C38.468 26.172 38.56 26.146 38.668 26.132V19.666C38.666 17.64 37.026 16 35 16ZM26.666 24H21.332C20.6 24 20 23.4 20 22.666C20 21.932 20.6 21.332 21.334 21.332H26.668C27.402 21.332 28.002 21.932 28.002 22.666C28.002 23.4 27.4 24 26.666 24Z"
+                                        fill="#80C3FF" />
+                                    <path
+                                        d="M47.096 31.118L40.096 28.738C39.818 28.642 39.516 28.642 39.236 28.738L32.236 31.118C31.696 31.302 31.332 31.81 31.332 32.38V37.738C31.332 44.494 38.824 47.758 39.144 47.894C39.312 47.964 39.49 48 39.666 48C39.844 48 40.022 47.964 40.188 47.894C40.508 47.758 48 44.494 48 37.738V32.38C48 31.81 47.636 31.302 47.096 31.118ZM44.4 36.134L40.4 41.468C40.168 41.778 39.814 41.97 39.428 41.998C39.396 41.998 39.364 42 39.334 42C38.982 42 38.642 41.86 38.392 41.61L35.726 38.944C35.206 38.424 35.206 37.58 35.726 37.058C36.246 36.536 37.09 36.538 37.612 37.058L39.192 38.638L42.27 34.534C42.712 33.946 43.548 33.826 44.136 34.268C44.722 34.708 44.842 35.544 44.4 36.134Z"
+                                        fill="#B3DBFF" />
+                                </svg>
+
+                            </div>
+                            <h3 class="fillFormHeading">
+                                Fill Eligibility Form
+                            </h3>
+                            <p class="fillFormPara">
+                                Tell us about yourself, to find out if you’re eligible to apply.
+                            </p>
+                            <a href="#" class="fillFormGetStartedAnchor">get started
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.52803 3.52845C5.78838 3.2681 6.21049 3.2681 6.47083 3.52845L10.4708 7.52845C10.7312 7.7888 10.7312 8.21091 10.4708 8.47126L6.47083 12.4713C6.21049 12.7316 5.78838 12.7316 5.52803 12.4713C5.26768 12.2109 5.26768 11.7888 5.52803 11.5285L9.05662 7.99986L5.52803 4.47126C5.26768 4.21091 5.26768 3.7888 5.52803 3.52845Z"
+                                        fill="black" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rewardSection">
+            <div class="container">
+                <div class="row rewardRow">
+                    <div class="col-md-6 rewardTextCol">
+                        <div class="insideRewardTextCol">
+                            <div class="rewardIcon">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M52 64H12C5.372 64 0 58.628 0 52V12C0 5.372 5.372 0 12 0H52C58.628 0 64 5.372 64 12V52C64 58.628 58.628 64 52 64Z"
+                                        fill="#FFE4E7" />
+                                    <path
+                                        d="M37.442 24.576L36.868 28.176C36.806 28.554 36.968 28.934 37.282 29.152C37.452 29.272 37.654 29.332 37.854 29.332C38.02 29.332 38.188 29.29 38.34 29.206L41.352 27.528L44.376 29.184C44.71 29.368 45.122 29.346 45.436 29.122C45.748 28.9 45.906 28.52 45.844 28.142L45.244 24.546L47.716 21.998C47.978 21.73 48.066 21.336 47.946 20.982C47.826 20.626 47.518 20.368 47.146 20.314L43.756 19.808L42.22 16.57C42.058 16.222 41.706 16 41.32 16C41.318 16 41.318 16 41.316 16C40.93 16.002 40.576 16.226 40.414 16.578L38.9 19.826L35.512 20.354C35.142 20.412 34.834 20.672 34.718 21.028C34.6 21.384 34.692 21.776 34.954 22.042L37.442 24.576Z"
+                                        fill="#FF808E" />
+                                    <path
+                                        d="M47.1481 38.984L43.7581 38.478L42.2221 35.24C42.0561 34.892 41.7061 34.668 41.3181 34.668C41.3161 34.668 41.3161 34.668 41.3141 34.668C40.9281 34.67 40.5741 34.894 40.4121 35.246L38.8981 38.494L35.5101 39.022C35.1401 39.08 34.8321 39.34 34.7161 39.696C34.5981 40.052 34.6901 40.444 34.9521 40.71L37.4421 43.242L36.8681 46.842C36.8061 47.22 36.9681 47.6 37.2821 47.818C37.4521 47.938 37.6541 47.998 37.8541 47.998C38.0201 47.998 38.1881 47.956 38.3401 47.872L41.3521 46.194L44.3761 47.85C44.7101 48.034 45.1221 48.01 45.4361 47.788C45.7481 47.566 45.9061 47.186 45.8441 46.808L45.2441 43.212L47.7161 40.664C47.9781 40.396 48.0661 40.002 47.9461 39.648C47.8261 39.296 47.5181 39.038 47.1481 38.984Z"
+                                        fill="#FF808E" />
+                                    <path
+                                        d="M30.334 34.334H27.668C27.116 34.334 26.668 33.886 26.668 33.334C26.668 32.782 27.116 32.334 27.668 32.334H30.334C30.886 32.334 31.334 32.782 31.334 33.334C31.334 33.886 30.886 34.334 30.334 34.334Z"
+                                        fill="#FFB3BB" />
+                                    <path
+                                        d="M33.666 44H30.332C29.78 44 29.332 43.552 29.332 43V25C29.332 24.448 29.78 24 30.332 24H33.666C34.218 24 34.666 24.448 34.666 25C34.666 25.552 34.218 26 33.666 26H31.332V42H33.666C34.218 42 34.666 42.448 34.666 43C34.666 43.552 34.218 44 33.666 44Z"
+                                        fill="#FFB3BB" />
+                                    <path
+                                        d="M21.334 32C19.864 32 18.668 30.804 18.668 29.334C18.668 27.864 19.864 26.668 21.334 26.668C22.804 26.668 24 27.864 24 29.334C24 30.804 22.804 32 21.334 32Z"
+                                        fill="#FF808E" />
+                                    <path
+                                        d="M25.666 38.666H17C16.448 38.666 16 38.218 16 37.666V37C16 34.978 17.644 33.334 19.666 33.334H23C25.022 33.334 26.666 34.978 26.666 37V37.666C26.666 38.218 26.218 38.666 25.666 38.666Z"
+                                        fill="#FF808E" />
+                                </svg>
+                            </div>
+                            <h3 class="rewardTitle">
+                                Choose Your Rewards
+                            </h3>
+                            <p class="rewardPara">
+                                Match your card to your lifestyle. We’ve got benefits from across brands & categories for you to choose from. Each
+                                benefit has an attached fee. Just add the ones you like to your card.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 rewardImageCol">
+                        <div class="insideRewardImgCol">
+                            <div class='wrapper'>
+                                <div class='carousel'>
+                                    <div class='carousel__item'>
+                                        <img src="./images/image.png" alt="" class="w-100 carouselImg">
+                                        <img src="./images/icon.png" class="smallImg" alt="">
+                                        <span class="bookTicketText">Buy 1 Get 1 <br> Movie Tickets</span>
+                                    </div>
+                                    <div class='carousel__item'>
+                                        <img src="./images/image.png" alt="" class="w-100 carouselImg">
+                                        <img src="./images/icon.png" class="smallImg" alt="">
+                                        <span class="bookTicketText">Buy 1 Get 1 <br> Movie Tickets</span>
+                                    </div>
+                                    <div class='carousel__item'>
+                                        <img src="./images/image.png" alt="" class="w-100 carouselImg">
+                                        <img src="./images/icon.png" class="smallImg" alt="">
+                                        <span class="bookTicketText">Buy 1 Get 1 <br> Movie Tickets</span>
+                                    </div>
+                                    <div class='carousel__item'>
+                                        <img src="./images/image.png" alt="" class="w-100 carouselImg">
+                                        <img src="./images/icon.png"  class="smallImg"alt="">
+                                        <span class="bookTicketText">Buy 1 Get 1 <br> Movie Tickets</span>
+                                    </div>
+                                    <div class='carousel__item'>
+                                        <img src="./images/image.png" alt="" class="w-100 carouselImg">
+                                        <img src="./images/icon.png" class="smallImg" alt="">
+                                        <span class="bookTicketText">Buy 1 Get 1 <br> Movie Tickets</span>
+                                    </div>
+                                    <div class='carousel__item'>
+                                        <img src="./images/image.png" alt="" class="w-100 carouselImg">
+                                        <img src="./images/icon.png" class="smallImg" alt="">
+                                        <span class="bookTicketText">Buy 1 Get 1 <br> Movie Tickets</span>
+                                    </div>
+                                    <div class='carousel__item'>
+                                        <img src="./images/image.png" alt="" class="w-100 carouselImg">
+                                        <span class="bookTicketText">Buy 1 Get 1 <br> Movie Tickets</span>
+                                        <img src="./images/icon.png" class="smallImg" alt="">
+                                    </div>
+                                    <div class='carousel__item'>
+                                        <img src="./images/image.png" alt="" class="w-100 carouselImg">
+                                        <span class="bookTicketText">Buy 1 Get 1 <br> Movie Tickets</span>
+                                        <img src="./images/icon.png" class="smallImg" alt="">
+                                    </div>
+                                    <div class='carousel__item'>
+                                        <img src="./images/image.png" alt="" class="w-100 carouselImg">
+                                        <img src="./images/icon.png" class="smallImg" alt="">
+                                        <span class="bookTicketText">Buy 1 Get 1 <br> Movie Tickets</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mobRewardCol col">
+                        <h3 class="mobRewardHeading">Choose Your Rewards</h3>
+                        <p class="mobRewardPara">
+                            Choose rewards from brands and categories that fit in with your personality. Your card’s annual fee will based on the
+                            rewards you select.
+                        </p>
+                        <a href="#" class="choiceAnchorMobile">get started
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.52803 3.52851C5.78838 3.26816 6.21049 3.26816 6.47083 3.52851L10.4708 7.52851C10.7312 7.78886 10.7312 8.21097 10.4708 8.47132L6.47083 12.4713C6.21049 12.7317 5.78838 12.7317 5.52803 12.4713C5.26768 12.211 5.26768 11.7889 5.52803 11.5285L9.05662 7.99992L5.52803 4.47132C5.26768 4.21097 5.26768 3.78886 5.52803 3.52851Z"
+                                    fill="#272727" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="styledCard ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 leftImgThumbCol">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/main.png" class="d-block w-100 carouselImg" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/card(1).png" class="d-block w-100 carouselImg" alt="...">
+                                    <div class="card-no">
+                                        <span>5675</span><span>1234</span><span>12345  </span> <span>5897</span>
+                                    </div>
+                                    <div class="cardname">ANSHUL SHARMA</div>
+                                    <div class="chip"><img src="./images/chip.png" alt=""></div>
+                                    <div class="cardType">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.1156 2.46603H11.0872V16.4711H19.1156V2.46603Z" fill="#FF5F00" />
+                                            <path
+                                                d="M11.4613 9.72753C11.4613 6.88199 12.8376 4.35811 14.9531 2.72501C13.3984 1.53731 11.4359 0.819733 9.29492 0.819733C4.22296 0.819733 0.119507 4.8035 0.119507 9.72753C0.119507 14.6516 4.22296 18.6353 9.29492 18.6353C11.4359 18.6353 13.3984 17.9178 14.9531 16.7301C12.8376 15.1217 11.4613 12.5731 11.4613 9.72753Z"
+                                                fill="#EB001B" />
+                                            <path
+                                                d="M29.7597 9.72729C29.7597 14.6513 25.6563 18.6351 20.5843 18.6351C18.4434 18.6351 16.4809 17.9175 14.9261 16.7298C17.0671 15.0967 18.4179 12.5728 18.4179 9.72729C18.4179 6.88174 17.0416 4.35786 14.9261 2.72477C16.4809 1.53706 18.4434 0.819489 20.5843 0.819489C25.6563 0.819489 29.7597 4.828 29.7597 9.72729Z"
+                                                fill="#F79E1B" />
+                                        </svg>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/card(2).png" class="d-block w-100 carouselImg" alt="...">
+                                    <div class="card-no">
+                                        <span>5675</span><span>1234</span><span>12345 </span> <span>5897</span>
+                                    </div>
+                                    <div class="cardname">ANSHUL SHARMA</div>
+                                    <div class="chip"><img src="./images/chip.png" alt=""></div>
+                                    <div class="cardType">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.1156 2.46603H11.0872V16.4711H19.1156V2.46603Z" fill="#FF5F00" />
+                                            <path
+                                                d="M11.4613 9.72753C11.4613 6.88199 12.8376 4.35811 14.9531 2.72501C13.3984 1.53731 11.4359 0.819733 9.29492 0.819733C4.22296 0.819733 0.119507 4.8035 0.119507 9.72753C0.119507 14.6516 4.22296 18.6353 9.29492 18.6353C11.4359 18.6353 13.3984 17.9178 14.9531 16.7301C12.8376 15.1217 11.4613 12.5731 11.4613 9.72753Z"
+                                                fill="#EB001B" />
+                                            <path
+                                                d="M29.7597 9.72729C29.7597 14.6513 25.6563 18.6351 20.5843 18.6351C18.4434 18.6351 16.4809 17.9175 14.9261 16.7298C17.0671 15.0967 18.4179 12.5728 18.4179 9.72729C18.4179 6.88174 17.0416 4.35786 14.9261 2.72477C16.4809 1.53706 18.4434 0.819489 20.5843 0.819489C25.6563 0.819489 29.7597 4.828 29.7597 9.72729Z"
+                                                fill="#F79E1B" />
+                                        </svg>
+                                    
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/card(3).png" class="d-block w-100 carouselImg" alt="...">
+                                    <div class="card-no">
+                                        <span>5675</span><span>1234</span><span>12345 </span> <span>5897</span>
+                                    </div>
+                                    <div class="cardname">ANSHUL SHARMA</div>
+                                    <div class="chip"><img src="./images/chip.png" alt=""></div>
+                                    <div class="cardType">
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.1156 2.46603H11.0872V16.4711H19.1156V2.46603Z" fill="#FF5F00" />
+                                            <path
+                                                d="M11.4613 9.72753C11.4613 6.88199 12.8376 4.35811 14.9531 2.72501C13.3984 1.53731 11.4359 0.819733 9.29492 0.819733C4.22296 0.819733 0.119507 4.8035 0.119507 9.72753C0.119507 14.6516 4.22296 18.6353 9.29492 18.6353C11.4359 18.6353 13.3984 17.9178 14.9531 16.7301C12.8376 15.1217 11.4613 12.5731 11.4613 9.72753Z"
+                                                fill="#EB001B" />
+                                            <path
+                                                d="M29.7597 9.72729C29.7597 14.6513 25.6563 18.6351 20.5843 18.6351C18.4434 18.6351 16.4809 17.9175 14.9261 16.7298C17.0671 15.0967 18.4179 12.5728 18.4179 9.72729C18.4179 6.88174 17.0416 4.35786 14.9261 2.72477C16.4809 1.53706 18.4434 0.819489 20.5843 0.819489C25.6563 0.819489 29.7597 4.828 29.7597 9.72729Z"
+                                                fill="#F79E1B" />
+                                        </svg>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                    <img src="./images/main.png" class="d-block w-100" alt="...">
+                                </li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                                    <img src="./images/card(1).png" class="d-block w-100" alt="...">
+                                </li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                                    <img src="./images/card(2).png" class="d-block w-100" alt="...">
+                                </li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3">
+                                    <img src="./images/card(3).png" class="d-block w-100" alt="...">
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-6 cardColRight">
+                        <div class="insideCardColRight">
+                            <div class="cardColIcon">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M52 64H12C5.37207 64 0 58.6279 0 52V12C0 5.37207 5.37207 0 12 0H52C58.6279 0 64 5.37207 64 12V52C64 58.6279 58.6279 64 52 64Z"
+                                        fill="white" />
+                                    <path
+                                        d="M39 16H19.666C17.644 16 16 17.644 16 19.666V24.332C16 26.356 17.644 28 19.666 28H39C41.022 28 42.666 26.356 42.666 24.334V19.668C42.666 17.644 41.022 16 39 16Z"
+                                        fill="#CCB3FF" />
+                                    <path
+                                        d="M44.666 20.666H42.666V23.332H44.666C45.0342 23.332 45.332 23.6299 45.332 23.998V29.998C45.332 30.3662 45.0322 30.6641 44.666 30.6641H31.332C29.126 30.6641 27.332 32.458 27.332 34.6641V36H30V34.666C30 33.9321 30.5981 33.332 31.334 33.332H44.668C46.5059 33.334 48 31.8379 48 30V24C48 22.1621 46.5059 20.666 44.666 20.666Z"
+                                        fill="#E0D1FF" />
+                                    <path
+                                        d="M31 36H26.334C25.0459 36 24 37.0459 24 38.334V45.668C24 46.9541 25.0459 48 26.334 48H31C32.2861 48 33.334 46.9541 33.334 45.666V38.332C33.334 37.0459 32.2861 36 31 36Z"
+                                        fill="#CCB3FF" />
+                                </svg>
+
+                            </div>
+                            <h3 class="cardColHeading">
+                                Select Your Style
+                            </h3>
+                            <p class="cardColPara">
+                                Match your card to your personality. Whether you like a minimal look or something that catches everyone’s eyes, we’ve
+                                got a style for you. You can update your style every year, for a small fee
+                            </p>
+                            <a href="#" class="choiceAnchorMobile">get started
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.52803 3.52851C5.78838 3.26816 6.21049 3.26816 6.47083 3.52851L10.4708 7.52851C10.7312 7.78886 10.7312 8.21097 10.4708 8.47132L6.47083 12.4713C6.21049 12.7317 5.78838 12.7317 5.52803 12.4713C5.26768 12.211 5.26768 11.7889 5.52803 11.5285L9.05662 7.99992L5.52803 4.47132C5.26768 4.21097 5.26768 3.78886 5.52803 3.52851Z"
+                                        fill="#272727" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ChoiceSec">
+            <div class="container">
+                <h3 class="mobileChoiceHeading">
+                    Why the OneSync Card is the Best Choice for you?
+                </h3>
+                <p class="mobileChoicePara">
+                    You can create a Credit Card that fits all your needs on your own. Gone are the days when you had choose from premade
+                    credit cards with features that you did not need.
+                </p>
+                <p class="mobileChoicePara">
+                    You can create a Credit Card that fits all your needs on your own. Gone are the days when you had choose from premade
+                    credit cards with features that you did not need.
+                </p>
+                <a href="#" class="choiceAnchorMobile">get started 
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.52803 3.52851C5.78838 3.26816 6.21049 3.26816 6.47083 3.52851L10.4708 7.52851C10.7312 7.78886 10.7312 8.21097 10.4708 8.47132L6.47083 12.4713C6.21049 12.7317 5.78838 12.7317 5.52803 12.4713C5.26768 12.211 5.26768 11.7889 5.52803 11.5285L9.05662 7.99992L5.52803 4.47132C5.26768 4.21097 5.26768 3.78886 5.52803 3.52851Z"
+                            fill="white" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <section class="faqSection">
+            <div class="container">
+                <div class="indsideFaq">
+                    <h3 class="faqHeading">FAQs</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Who’s eligible for the Card?
+                                        <span class="cheveron">
+                                            <svg  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24 20L16 12L8 20" stroke="#F2707C" stroke-width="2.66667" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+
+                                        </span>
+                                    </button>
+                                </h2>
+                            </div>
+                    
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    If you’re between 23-60 years of age, have a monthly income of ₹25,000 or more, and have never defaulted on a credit
+                                    card or loan payment, we’d encourage you to apply. However, your application will be declined if your location isn’t
+                                    serviceable or if your credit score is low.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Is my location serviceable?
+                                        <span class="cheveron">
+                                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24 20L16 12L8 20" stroke="#F2707C" stroke-width="2.66667" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        
+                                        </span>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Some placeholder content for the second accordion panel. This panel is hidden by default.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What if I don’t want to pay at all?
+                                        <span class="cheveron">
+                                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24 20L16 12L8 20" stroke="#F2707C" stroke-width="2.66667" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        
+                                        </span>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by
+                                    default.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        What happens after I’ve build my card?
+                                        <span class="cheveron">
+                                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24 20L16 12L8 20" stroke="#F2707C" stroke-width="2.66667" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        
+                                        </span>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by
+                                    default.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+        <div class="container">
+            <div class="footerTopRow">
+                <h3 class="footerHeading">OneSync Credit Card </h3>
+                <p class="footerPara">
+                    Experience Freedom
+                </p>
+                <a href="#" class="text-decoration-none btn getStartedFooterBtn">Get started</a>
+            </div>
+            <hr class="footerHr">
+            <div class="row footer-row">
+                <div class="col-md-6 col-lg-3 col-xl-3 footerCol">
+                    <div class="insideFooterCol">
+                        <ul class="list-unstyled footerUl">
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Manage Your Card</li>
+                            </a>
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Track Your Application</li>
+                            </a>
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Contact Us</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 footerCol">
+                    <div class="insideFooterCol">
+                        <ul class="list-unstyled footerUl">
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Manage Your Card</li>
+                            </a>
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Track Your Application</li>
+                            </a>
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Contact Us</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 footerCol">
+                    <div class="insideFooterCol">
+                        <ul class="list-unstyled footerUl">
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Manage Your Card</li>
+                            </a>
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Track Your Application</li>
+                            </a>
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Contact Us</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 footerCol">
+                    <div class="insideFooterCol">
+                        <ul class="list-unstyled footerUl">
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Manage Your Card</li>
+                            </a>
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Track Your Application</li>
+                            </a>
+                            <a href="#" class="text-decoration-none footerAnchor">
+                                <li class="footerLi">Contact Us</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    
+</html>

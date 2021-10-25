@@ -1,0 +1,112 @@
+.nav-complete {
+    background-color: #098240;
+    display: flex;
+    align-items: center;
+    height: 76px;
+}
+.nav-2.container .navbar-light .nav-link {
+    letter-spacing: -0.5px;
+    color: #D8D8D8;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 18px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    height: 22px;
+    text-decoration: none;
+    position: relative;
+}
+.nav-2.container .navbar-light .first {
+    border-right: 1px solid #D8D8D8;
+}
+.nav-2.container li.nav-item {
+    margin-right: 0px;
+}
+.nav-complete .nav-item a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #ea4724;
+    width: 0%;
+    left: 10px;
+    bottom: 0;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.nav-complete .nav-item a:hover::after{
+    content: "";
+    position: absolute;
+    height: 2px ;
+    background-color: #ea4724;
+    width: 80%;
+    left: 10px;
+    bottom: 0;
+}
+.nav-2.container .navbar-brand {
+    letter-spacing: -0.65px;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 56px;
+}
+.background-with-info{
+    background-image: url(../images/explore-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    position: relative;
+}
+.background-with-info:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: 0;
+    bottom: 0;
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #000000 100%) 0% 0% no-repeat padding-box;
+}
+.info {
+    position: relative;
+    top: 350px;
+    z-index: 1;
+}
+h3.heading {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+h3.search-again-text {
+    color: #afcb38;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+@media (min-width: 600px){
+    .nav-2.container .navbar-brand {
+        letter-spacing: -0.65px;
+        color: #FFFFFF;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 56px;
+    }
+    h3.heading {
+        color: #fff;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+        font-family: Montserrat;
+    }
+    h3.search-again-text {
+        color: #afcb38;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+        font-family: Montserrat;
+    }
+    
+}

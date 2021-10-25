@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <meta name="robots" content="noindex">
+    <title>Text Converter</title>
+    <link rel="stylesheet" href="./down.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Image and text -->
+    <header class="">
+        <nav class="navbar navbar-light container">
+            <a class="navbar-brand " href="#">
+            <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            Unicode converter
+            </a>
+        </nav>
+    </header>
+    <div class="container text-boys">
+
+        <div class="textarea-for-input pt-3">
+            <div class="form-group">
+                <label for="get">Enter text below</label>
+                <textarea class="form-control" id="get" placeholder="Your text here" rows="3"></textarea>
+            </div>
+              <hr>
+              <div class="info row mx-0">
+                 <div class="mr-auto">
+                    <h6 class="info-text">
+                        Click on the text to copy it.
+                    </h6>
+                 </div>
+                 <div class="ranger d-flex ">
+                     <span>Font Size</span> 
+                    <input type="range" min="16" max="30" value="23" class="slider ml-3" id="myRange" onchange="changeFont(this)">
+                 </div>
+              </div>
+        </div>
+       
+
+        
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    TILDE STRIKE THROUGh
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div1">
+                    
+                    <textarea class="form-control" id="put1" class="result-text-area"  rows="1" onfocus="copyThisval(this)">Ⓗⓘ Ⓦⓔⓛⓒⓞⓜⓔ ⓣⓞ Ⓤⓝⓘⓒⓞⓓⓔ-Ⓒⓞⓝⓥⓔⓡⓣⓔⓡ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    TILDE STRIKE THROUGh
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div2">
+                    
+                    <textarea class="form-control" id="put2" class="result-text-area"  rows="1" onfocus="copyThisval(this)">ℌ𝔦 𝔚𝔢𝔩𝔠𝔬𝔪𝔢 𝔱𝔬 𝔘𝔫𝔦𝔠𝔬𝔡𝔢-ℭ𝔬𝔫𝔳𝔢𝔯𝔱𝔢𝔯.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    old english
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div3">
+                    
+                    <textarea class="form-control" id="put3" class="result-text-area"  rows="1" onfocus="copyThisval(this)">𝕳𝖎 𝖂𝖊𝖑𝖈𝖔𝖒𝖊 𝖙𝖔 𝖀𝖓𝖎𝖈𝖔𝖉𝖊-𝕮𝖔𝖓𝖛𝖊𝖗𝖙𝖊𝖗.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Math bold script
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div4">
+                    
+                    <textarea class="form-control" id="put4" class="result-text-area"  rows="1" onfocus="copyThisval(this)">ɧı ῳɛƖƈơɱɛ ɬơ ųŋıƈơɖɛ-ƈơŋ۷ɛཞɬɛཞ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Asian
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div5">
+                    
+                    <textarea class="form-control" id="put5" class="result-text-area"  rows="1" onfocus="copyThisval(this)">ﾉﾉ ﾘ乇ﾚᄃのﾶ乇 ｲの √刀ﾉᄃのり乇-りの刀√乇尺ｲ乇尺.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    square
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div6">
+                    
+                    <textarea class="form-control" id="put6" class="result-text-area"  rows="1" onfocus="copyThisval(this)">🄷🄸 🅆🄴🄻🄲🄾🄼🄴 🅃🄾 🅄🄽🄸🄲🄾🄳🄴-🄲🄾🄽🅅🄴🅁🅃🄴🅁.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    squiggle
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div7">
+                    
+                    <textarea class="form-control" id="put7" class="result-text-area"  rows="1" onfocus="copyThisval(this)">ᏂᎥ ᏇᏋᏝፈᎧᎷᏋ ᏖᎧ ᏬᏁᎥፈᎧᎴᏋ-ፈᎧᏁᏉᏋᏒᏖᏋᏒ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Math Script
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div8">
+                    
+                    <textarea class="form-control" id="put8" class="result-text-area"  rows="1" onfocus="copyThisval(this)">𝓗𝓲 𝓦𝓮l𝓬𝓸𝓶𝓮 𝓽𝓸 𝓤𝓷𝓲𝓬𝓸𝓭𝓮-𝓒𝓸𝓷𝓿𝓮𝓻𝓽𝓮𝓻.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    DOUBLE struck
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div9">
+                    
+                    <textarea class="form-control" id="put9" class="result-text-area"  rows="1" onfocus="copyThisval(this)">ℍ𝕚 𝕎𝕖𝕝𝕔𝕠𝕞𝕖 𝕥𝕠 𝕌𝕟𝕚𝕔𝕠𝕕𝕖-ℂ𝕠𝕟𝕧𝕖𝕣𝕥𝕖𝕣.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Box Dark
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div10">
+                    
+                    <textarea class="form-control" id="put10" class="result-text-area"  rows="1" onfocus="copyThisval(this)">🅸🅸 🆅🅴🅻🅲🅾🅼🅴 🆃🅾 🆇🅽🅸🅲🅾🅳🅴-🅴🅾🅽🆅🅴🆁🆃🅴🆁.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Cursive
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div11">
+                    
+                    <textarea class="form-control" id="put11" class="result-text-area"  rows="1" onfocus="copyThisval(this)">𝓗𝓲 𝓦𝓮𝓵𝓬𝓸𝓶𝓮 𝓽𝓸 𝓤𝓷𝓲𝓬𝓸𝓭𝓮-𝓒𝓸𝓷𝓿𝓮𝓻𝓽𝓮𝓻.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    lol style
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div12">
+                    
+                    <textarea class="form-control" id="put12" class="result-text-area"  rows="1" onfocus="copyThisval(this)">☟︎♓︎◻︎🕈︎♏︎●︎♍︎□︎❍︎♏︎◻︎⧫︎□︎◻︎🕆︎■︎♓︎♍︎□︎♎︎♏︎📫︎👍︎□︎■︎❖︎♏︎❒︎⧫︎♏︎❒︎📬︎</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Stroked
+
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div13">
+                    
+                    <textarea class="form-control" id="put13" class="result-text-area"  rows="1" onfocus="copyThisval(this)">Ħɨ 𝔚ɇłȼømɇ ŧø ᵾ𝔫ɨȼøđɇ-Ȼø𝔫𝔳ɇɍŧɇɍ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Stroked
+
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div14">
+                    
+                    <textarea class="form-control" id="put14" class="result-text-area"  rows="1" onfocus="copyThisval(this)">Ħΐ ϢεłϾømε Ϯø ᵾήΐϾøđε-Ͼøή𝔳εϪϮεϪ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Lovecasm
+                    
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div15">
+                    
+                    <textarea class="form-control" id="put15" class="result-text-area"  rows="1" onfocus="copyThisval(this)">🌝Ħɨ 🎔𝔚🌐ɇ🌹ł🌄ȼ🌝ø🎔m🌐ɇ 🌝ŧ🌝ø 🌜ᵾ🌠𝔫ɨ🌄ȼ🌝ø🌅đ🌐ɇ-🌄Ȼ🌝ø🌠𝔫🌀𝔳🌐ɇ🌹ɍ🌝ŧ🌐ɇ🌹ɍ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Lovecasm
+                    
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group"id="div16">
+                    
+                    <textarea class="form-control" id="put16" class="result-text-area"  rows="1" onfocus="copyThisval(this)">ԸԹ ՇԵԼԳԿԽԵ ՄԿ ՅԾԹԳԿԴԵ-ԳԿԾՆԵՂՄԵՂ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Lovecasm
+                    
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div17">
+                    
+                    <textarea class="form-control" id="put17" class="result-text-area"  rows="1" onfocus="copyThisval(this)">חט ץהכגמלה עמ ףםטגמדה-גמםפהנעהנ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Bubble text
+                    
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div18">
+                    
+                    <textarea class="form-control" id="put18" class="result-text-area"  rows="1" onfocus="copyThisval(this)">🅗🅘 🅦🅔🅛🅒 🅞🅜🅔 🅣🅞 🅤🅝🅘🅒 🅞🅓🅔-🅒🅞🅝🅥🅔🅡🅣🅔🅡.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid r">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Inverted text
+                    
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div19">
+                    
+                    <textarea class="form-control" id="put19" class="result-text-area"  rows="1" onfocus="copyThisval(this)">ɥı ʍǝןɔ oɯǝ ʇo nuıɔ opǝ-ɔou𐌡ǝɹʇǝɹ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    inverted reverse
+                    
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div20">
+                    
+                    <textarea class="form-control" id="put20" class="result-text-area"  rows="1" onfocus="copyThisval(this)">.ɹǝʇɹǝ𐌡uoɔ-ǝpoɔ ıun oʇ ǝɯoɔ ןǝʍ ıɥ</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Faux text
+                    
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div21">
+                    
+                    <textarea class="form-control" id="put21" class="result-text-area"  rows="1" onfocus="copyThisval(this)">ዘጎ ሠቿረር ዐጠቿ ፕዐ ሁክጎር ዐዕቿ-ርዐክሀቿዪፕቿዪ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container-fluid last-container">
+        <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 large-div">
+           <div class="row mx-0 row-section">
+               <div class="col-sm-12 col-12 col-lg-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center ">
+                <h6 class="text-titles text-uppercase">
+                    Small text
+                    
+                </h6>
+               </div>
+               <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9 col-12 px-0">
+                <div class="form-group" id="div22">
+                    
+                    <textarea class="form-control" id="put22" class="result-text-area"  rows="1" onfocus="copyThisval(this)">ʜɪ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴜɴɪᴄᴏᴅᴇ-ᴄᴏɴᴠᴇʀᴛᴇʀ.</textarea>
+                    <!-- <div class="copy-information">
+                        <p class="copied-text">Copied!</p>
+                    </div> -->
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <button class="btn" id="loadmore">load more</button>
+
+    <footer class="foot-man">
+        <section>
+            <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 d-flex mx-auto ">
+               <div class="content-footer">
+                <ul class="list-unstyled d-flex footer-list">
+                    <li class="footer-lists"><a href="./about">About</a></li>
+                    <li class="footer-lists"><a href="./contact">Contact Us</a></li>
+                    <li class="footer-lists"><a href="./privacy">Privacy</a></li>
+                </ul>
+               </div>
+            </div>
+            <div class="col-md-10 col-lg-10 col-xl-9 col-sm-12 col-12 d-flex mx-auto ">
+                <div class="text">
+                    © 2020 <strong><a href="./index.html"  class="site-link">unicodeconverter.com</a></strong> <br>
+                   <span class="big-screen"> Owner <span class="text-info font-weight-bold">Asish Chandra</span></span>
+                </div>
+            </div>
+            
+        </section>
+    </footer>
+    
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</body>
+</html>

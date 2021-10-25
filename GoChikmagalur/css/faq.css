@@ -1,0 +1,316 @@
+
+
+.banner{
+    background-image: url(../images/about-banner.png);
+    height: 310px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.banner::after{
+    height: 170px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: transparent linear-gradient(180deg, #09824000 0%, #29AA63 100%) 0% 0% no-repeat padding-box;
+    bottom: 0;
+    left: 0;
+}
+.social-top{
+    position: absolute;
+    z-index: 111;
+    bottom: 70px;
+    right: 20px;
+}
+.social-top ul li{
+    border-radius: 50%;
+    height: 34px ;
+    width: 34px;
+    background-color: #afcb38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.social-top ul li:hover{
+    background-color: #707070;
+}
+.social-top .social-iton-top{
+    color: #fff;
+}
+.banner .text-heading {
+    position: absolute;
+    top: 185px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner .text-heading .heading{
+    /* font-size: 35px; */
+    font-family: Montserrat;
+    font-weight: 600;
+    /* line-height: 26px; */
+    text-align: center;
+}
+.anchors ul{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    /* align-items: center; */
+}
+.anchors ul li{
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    height: 22px;
+   
+}
+.anchors ul li:nth-child(1){
+    border-right: 1px solid #fff;
+}
+.anchors ul li a {
+    letter-spacing: -0.5px;
+    color: #D8D8D8;
+    font-family:  Montserrat;
+    font-size: 15px;
+    line-height: 18px;
+
+    height: 20px;
+    display: flex;
+    align-items: center;
+    height: 22px;
+    text-decoration: none;
+    position: relative;
+}
+.anchors ul li a::after{
+    content: "";
+    position: absolute;
+    height: 2px ;
+    background-color: #ea4724;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.anchors ul li a:hover::after{
+    content: "";
+    position: absolute;
+    height: 2px ;
+    background-color: #ea4724;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.collapsible {
+    background-color: #F2F2F2;
+    color: #098240;
+    cursor: pointer;
+    padding: 10px 18px 10px 60px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 11px;
+    position: relative;
+    font-family: Montserrat;
+    font-weight: 600;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #F2F2F2;
+  }
+  
+  .collapsible:after {
+    font-family: FontAwesome;
+    content: url(../images/chevron.svg);
+    color: white;
+    font-weight: bold;
+    float: left;
+    /* margin-left: 5px; */
+    width: 45px;
+    height: 100%;
+    background: #BD2035;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: FontAwesome;
+  }
+  
+  .active:after {
+    content: url(../images/chvron2.svg);
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #fff;
+  }
+  .content-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.text-para{
+    text-align: justify;
+    letter-spacing: -0.5px;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Montserrat;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+.collapse-div{
+    margin-bottom: 23px;
+}
+.content p{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Montserrat;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+.content:nth-child(1){
+    padding-top: 20px;
+}
+
+.image-container-faq-top{
+    height: 274px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.image-container-faq{
+    height: 314px;
+    
+    overflow: hidden;
+    
+}
+.image-container-faq-top img{
+    height: 100%;
+    width: 100%;
+    -moz-transition: all 0.4 ease;
+    transition: all 0.4 ease;
+    -webkit-transition: all 0.4s ease;
+}
+.image-container-faq img{
+    height: 100%;
+    width: 100%;
+    -moz-transition: all 0.4 ease;
+    transition: all 0.4 ease;
+    -webkit-transition: all 0.4s ease;
+}.image-container-faq:hover img,
+.image-container-faq-top:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
+.rating-section {
+    padding: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.rating-section a.text-decoration-none{
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.61px;
+    line-height: 26px;
+    
+}
+.rating-para{
+    margin-top: 5px;
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    min-height:32px;
+    height: 65px;
+    overflow: hidden;
+    text-align: justify;
+}
+.book-now-btn{
+    width: 90px;
+    height: 32px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: #098240;
+    color: #ffffff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius:5px;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 600;
+    
+}
+.book-now-btn:hover{
+    background-color: #707070;
+    text-decoration: none;
+    color: #fff;
+}
+.rating-section .fa-star{
+    color: #ffaa00;
+    width: 16px;
+    height: 16px;
+}
+.image-texts-top {
+    position: absolute;
+    bottom: 0px !important;
+    width: 100%;
+    height: 42px;
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 16px;
+    left: 0px;
+}
+h6.overlay-text:hover{
+    color: #cde5d5;
+}
+  @media(min-width:760px){
+    .content-body {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .collapsible{
+        font-size: 20px;
+    }
+  }
+  @media(max-width:760px){
+      .image-container-faq-top{
+          margin-top: 30px;
+          height: 230px;
+      }
+      .image-container-faq{
+          height: 230px;
+      }
+  }
+  @media(min-width:760px) and (max-width:1199px){
+    .collapsible{
+        font-size: 14px;
+    }
+  }
+  h3.heading-new {
+    font-size: 28px;
+    color: #098240;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+    </style>
+</head>
+<body>
+    
+
+
+
+
+
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script>
+     try {
+  $.ajaxSetup({ cache: false });
+  $.ajax({ 
+    'async': false,
+     type: 'GET', 
+  
+    url: './xml.xml', 
+    // data: { get_param: 'value' }, 
+    contentType: "application/json; charset=utf-8",
+    dataType: 'xml',
+    success: function(response){
+      
+     
+      console.log(response)
+
+      function xmlToJson(response) {
+	
+	// Create the return object
+	var obj = {};
+
+	if (response.nodeType == 1) { // element
+		// do attributes
+		if (response.attributes.length > 0) {
+		obj["@attributes"] = {};
+			for (var j = 0; j < response.attributes.length; j++) {
+				var attribute = response.attributes.item(j);
+				obj["@attributes"][attribute.nodeName] = attribute.nodeValue;
+			}
+		}
+	} else if (response.nodeType == 3) { // text
+		obj = response.nodeValue;
+	}
+
+	// do children
+	if (response.hasChildNodes()) {
+		for(var i = 0; i < response.childNodes.length; i++) {
+			var item = response.childNodes.item(i);
+			var nodeName = item.nodeName;
+			if (typeof(obj[nodeName]) == "undefined") {
+				obj[nodeName] = xmlToJson(item);
+			} else {
+				if (typeof(obj[nodeName].push) == "undefined") {
+					var old = obj[nodeName];
+					obj[nodeName] = [];
+					obj[nodeName].push(old);
+				}
+				obj[nodeName].push(xmlToJson(item));
+			}
+		}
+  }
+ 
+	return obj;
+};
+      
+console.log(xmlToJson(response))
+    },
+    failure: function (response) {
+    
+  }
+});
+ } catch (error) {
+   console.log(error)
+   
+ }
+ 
+  </script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="robots" content="noindex"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet" />
+    
+    <title>Photo Convert Into 50 Kb -Online Any JPG/PNG/JPEG</title>
+    <meta name="description"
+        content="Here convert your photos like jpg, png, jpeg, or any image file into 50 kb size. Upload your photo and it will convert the photo into 50 kb." />
+    <meta name="theme-color" content="#333">
+    <meta property="og:title" content="Photo Convert Into 50 Kb -Online Any JPG/PNG/JPEG" />
+    <meta property="og:description" content="Here convert your photos like jpg, png, jpeg, or any image file into 50 kb size. Upload your photo and it will convert the photo into 50 kb." />
+    <meta property="og:url" content="https://photoconvertinto50kb.com" />
+    <meta property="og:site_name" content="Photo Convert Into 50kb" />
+    <meta property="og:image" content="https://photoconvertinto50kb.com/assets/og.png" />
+    <link rel="icon" type="image/png" href="https://photoconvertinto50kb.com/assets/favicon.png" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        <!-- <meta name="google-site-verification" content="8iTE5aXpfPemTecnR8EiV7_7jENuVzBVkfa2OZ9-39s" /> -->
+        <!-- <script data-ad-client="ca-pub-7273719401369978" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+               
+                <div class="brand-name"><a href="https://photoconvertinto50kb.com/" class="text-decoration-none">photo convert into 50kb .com</a></div>
+                <div class="hyper-links">
+                    <div class="inside-hyper-links">
+                       
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    <section class="main-container-section">
+
+        <main>
+            <section><article class="top-function-area">
+                <div class="container">
+                    <div class="selection-box">
+                        <div class="row m-b-1">
+                            <div class="col-sm-6 offset-sm-3">
+                                <div class="form-group inputDnD">
+                                    <label class="visually-hidden" for="inputFile">File Upload</label>
+                                    <input type="file" class="form-control-file text-primary font-weight-bold" id="inputFile" accept="image/*"
+                                        onchange="readUrl(this)" data-title="Drag and drop / Upload">
+                                </div>
+                                <button type="button" class="btn btn-primary btn-block select-img-btn"
+                                    onclick="document.getElementById('inputFile').click()">Select an image</button>
+                            </div>
+                        </div>
+                        <div class="convert-sec position-relative">
+                            <div class="content-forupload-progress col-sm-6 mx-auto d-none">
+                                <div class="image-preview-onupload">
+                                    <img src="" alt="" class="upload-preview-img">
+                                </div>
+                                <div class="progress position-relative">
+                                    <div class="upload-text">Uploading file. Complete: 40%</div>
+                                    <div class="progress-bar bg-success" role="progressbar" id="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="converting d-none">
+                                <div class="spinner-border"></div>
+                                <h6 class="converting-text text-white">Converting. Please wait ...</h6>
+                            </div>
+                        </div>
+                        <div class="image-ready-container d-none">
+                            
+                            <div class="img-preview">
+                                <img src="" alt="" class="preview">
+                                
+                            </div>
+                            <div class="size">
+                                <div class="name-div">
+                                    <span class="name-title">Name</span> :&nbsp;&nbsp;
+                                    <span class="file-name">Lorem ipsum dolor sit amet consectetur </span>
+                                </div> 
+                                <div class="name-div">
+                                    <span class="name-title">Old file size</span> :&nbsp;&nbsp;
+                                    <span class="old-file-size">500000</span> 
+                                </div>
+                                <div class="name-div">
+                                    <span class="name-title">New file size</span> :&nbsp;&nbsp;
+                                    
+                                    <span class="new-file-size">600000</span> 
+                                </div>
+                                <div class="name-div">
+                                    <span class="name-title">Percent reduced</span> :&nbsp;&nbsp;
+                                    
+                                    <span class="percent-change">10.99%</span>
+                                </div>
+                            </div>
+                            <div class="download-btn">
+                                <button onclick="downloadImg(this)" class="text-decoration-none btn" id="download-anchor">
+                                    Download
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                    </svg>
+                                </button>
+                            </div>
+    
+                            <div class="mob-sharer active">
+                                <div class="inside-sharer-mob">
+                                    <!-- <button class="btn share-btn shareIcon" onclick="showShareBtns()"><i class="fas fa-share-alt"></i></button>
+                                    <button class="btn share-btn shevero" onclick="showShareBtns()"><i class="fas fa-chevron-down"></i></button> -->
+                                    <h6 class="h6 text-center">Share it on : </h6>
+                                    <hr>
+                                    <div class="share-btns-mob">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://photoconvertinto50kb.com" target="_blank"
+                                            class="text-decoration-none"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://twitter.com/share?ref_src=https://photoconvertinto50kb.com" target="_blank"
+                                            class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://api.whatsapp.com/send?text=https://photoconvertinto50kb.com" target="_blank"
+                                            class="text-decoration-none"><i class="fab fa-whatsapp"></i></a>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </article></section>
+        </main>
+        <section>
+            <article class="decription-article">
+                <div class="description container">
+                    <h1 class="h1">Photo Convert Into 50 Kb  <span class="mob-class">-Online Any JPG/PNG/JPEG</span></h1>
+                    <p class="lead">
+                        Here convert your photos like jpg, png, jpeg, or any image file into 50 kb size. Upload your photo and it will convert
+                        the photo into 50kb.
+                    </p>
+                    <p class="lead">
+                        Welcome to the best photo converter into 50 kb tool, here just drag and drop or upload your photo via the select option,
+                        then your uploading will start, After uploading 100% complete this tool atomically convert your photo into 50 kb size
+                        within few seconds. After this, by clicking on the download option, you can download your photo and use it in your work.
+                    </p>
+                    <h2 class="h2">Photo convert into 50 kb jpg/png/jpeg(any)</h2>
+                    <p class="">
+                        Here you can convert any photo into 50 kb online. there is so many photo format like jpg, png, jpeg, etc, don't worry
+                        here you can compress/convert your any photo format into 50 kb very easily.
+                    </p>
+                    <p class="">
+                        This is completely an online photo converter just drag and drop or upload your photo/image and convert it into 50 kb
+                        within a seconds.
+                    </p>
+    
+                    <h2 class="h2">How to convert photo into 50 kb?</h2>
+                    <ul class="ul-content">
+                        <li class="steps"><strong>Step 1 : &nbsp;</strong> Drag and drop your photo or select your photo from local file.</li>
+                        <li class="steps"><strong>Step 2 : &nbsp;</strong> Wait till the 100% of the photo is uploaded.</li>
+                        <li class="steps"><strong>Step 3 : &nbsp;</strong> Now wait a second for photo convert into 50kb.</li>
+                        <li class="steps"><strong>Step 4 : &nbsp; </strong> Now Download your photo by clicking on "Download" Button.</li>
+                    </ul>
+                    <h2 class="h2">How to convert jpg into 50 kb online?</h2>
+                    <p class="">
+                        If you are looking for a photo converter where you can convert your jpg then you are in right place, as I mention above
+                        here you can convert your jpg/png/jpeg or any image file into 50 kb size. just follow the above "guide" and convert your
+                        photo into 50 kb online.
+                    </p>
+                    <h2 class="h2">About this 50 kb photo photo converter tool? </h2>
+                    <p class="">
+                        This is a single page, fully mobile responsive 50 kb(into) photo converter tool, those who are want to make their photo
+                        into 50 kb size can use this tool for work. just upload your photo and it will convert it into 50kb within a seconds.
+                        there is no particular mobile app where you can convert your photo into 50 kb so we develop this online 50 kb photo
+                        converter. just use this tool for free to convert your image online.
+    
+                    </p>
+                    <h2 class="h2">Can i compress image to 50 kb online here?</h2>
+                    <p class="">
+                        Yas, why not, as I mentioned above this is a this is online photo converter that makes or converts any photo into a 50
+                        kb size. this is totally an online tool. if you want to convert your photo size into 50 kb then read the "how-to" guide
+                        and convert any jpg/png/jpeg file size into 50 kb.
+                    </p>
+                    <h2 class="h2">Usages of under 50 kb size photo?</h2>
+                    <p class="">
+                        Especially in India, when we fill the form for online admission in any college or school, then in those forms we have to
+                        upload only the size of our photo size into 50 kb. Apart from this, when we fill the form for some jobs like UPSC, SSC,
+                        MTS, IBPS, RBI, etc in India, then the size of the photo or signature in those forms should be 50 kb. For these works,
+                        you can bring your photo size to 50 kb by using this tool.
+                    </p>
+                    <h2 class="h2">There is any limit to photo converting into 50 kb?</h2>
+                    <p class="">
+                        No, convert your jpg/png/jpeg or any photo format into 50 kb as much as you want without limitation and always free.
+                        this is completely free for now and also free for forever. use it and enjoy it for free.
+                    </p>
+                    <h2 class="h2">Is it support all photo formats?</h2>
+                    <p class="">
+                        Yes, it supports all photo formats like JPEG, PNG, JPG, GIF, RAW, CR2, NEF, ORF, SR2, and more. Just upload any photo
+                        format and this tool will convert it into 50 kb online.
+                    </p>
+                    <h2 class="h2">What are the compatible devices for the conversion?</h2>
+                    <p class="">
+                        We offer a service that is compatible with all PC devices, smartphones, and tablets.
+                    </p>
+                    <h2 class="h2">PhotoConvertInto50Kb.com</h2>
+                    <p class="">
+                        Convert photo into 50 kb with <a href="photoconvertinto50kb.com" class="text-decoration-none">photoconvertinto50kb.com</a>. By using our tool you can easily convert photo size into 50 kb
+                        size. and download them for free - this service works for computers, tablets, and mobile devices. The photos are always
+                        converted to the highest available quality.
+                    </p>
+                    
+                    <h2 class="h2">Security guaranteed</h2>
+                    <p class="">
+                        Your photos are automatically deleted from our servers a few hours after you are done working with them. Nobody has
+                        access to them except you.
+                    </p>
+                    <h2 class="h2">Where do the downloaded files get saved?</h2>
+                    <p class="">
+                        After downloading the photo(converted photo), the Files you've downloaded are automatically saved in the Downloads
+                        folder or the "download history" section on your device.
+                    </p>
+                </div>
+                <footer>
+                    <div class="inside-footer container">
+                        <ul class="list-unstyled footer-ul">
+                            <li class="footer-links"><a href="/about.html" class="text-decoration-none">About</a></li>
+                            <li class="footer-links"><a href="/privacy.html" class="text-decoration-none">Privacy</a></li>
+                            <!-- <li class="footer-links"><a href="/contact.html" class="text-decoration-none">Contact</a></li> -->
+                        </ul>
+                    </div>
+                </footer>
+            </article>
+        </section>
+    </section>
+
+    <div class="sharer active">
+        <div class="inside-sharer">
+            <button class="btn share-btn shareIcon" onclick="showShareBtns()"><i class="fas fa-share-alt"></i></button>
+            <button class="btn share-btn shevero" onclick="showShareBtns()"><i class="fas fa-chevron-down"></i></button>
+            <hr>
+            <div class="share-btns">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://photoconvertinto50kb.com" target="_blank" class="text-decoration-none"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/share?ref_src=https://photoconvertinto50kb.com" target="_blank" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+                <a href="https://api.whatsapp.com/send?text=https://photoconvertinto50kb.com" target="_blank" class="text-decoration-none"><i class="fab fa-whatsapp"></i></a>
+
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script> -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+            integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+           
+        <script src="./js/index.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        
+        
+        
+</body>
+
+</html>

@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
+    <link rel="stylesheet" href="./css/sign-up.css">
+    <!-- <link href="./css/t-datepicker.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="css/themes/t-datepicker-green.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="./t.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body >
+  <!-- <div id="loading">
+    
+  </div> -->
+   <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+       <h3 class="heading-for-signup"> Sign up for gochigmaglur.com</h3>
+       <div class="form-section">
+          <form>
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" required>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" required>
+                </div>
+              </div>
+              <div class="form-group  mt-4">
+                  
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+              </div>
+              <div class="input-group my-4 ">
+                  
+                  <input type="password" class="form-control" id="form-password" placeholder="Password" required>
+                  <div class="input-group-append"  onclick="changeAttributeOfInput()">
+                    <span class="input-group-text"><img src="./images/eye.svg" alt=""></span>
+                    <span class="eye-cross">/</span>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-2 col-md-1 modal-checkbox">
+                      <div class="form-group">
+                          <input type="checkbox" id="html" required>
+                          <label for="html"></label>
+                        </div>
+                  </div>
+                  <div class="col-10 col-md-11">
+                      <p class="terms-para">
+                          Yes, sign me up to recieve information about new tours, attractions, deals and discounts. I can unsubscribe at any time at www.gochikmagalur.com / unsubscribe or by sending an email to unsubscribe@gochikmagalur.com
+                      </p>
+                  </div>
+              </div>
+              <button type="submit" class="btn form-submit-button w-100">Create Account</button>
+              <p class="special-para">By creating an account, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+            </form>
+       </div>
+      </div>
+      <div class="modal-footer ">
+        <p class="special-para special-para-2">Alredy have an account? <a href="#"> Log in</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+    <header class="navbar-light fixed-top bg-white" >
+        <nav class="navbar navbar-expand-lg   container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png"  alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item top-link">
+                  <a class="nav-link" href="#"><img src="./images/hotels.svg" class="nav-imgs" alt=""> hotels</a>
+                </li>
+                <li class="nav-item top-link">
+                  <a class="nav-link" href="#"><img src="./images/homestay.svg" class="nav-imgs" alt="">Homestays</a>
+                </li>
+                <li class="nav-item top-link">
+                    <a class="nav-link" href="#"><img src="./images/explore.svg" class="nav-imgs" alt="">explore</a>
+                  </li>
+                  <li class="nav-item top-link">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="./images/signin.svg" class="nav-imgs" alt="">signin</a>
+                  </li>
+                  <li class="nav-item top-link dropmenu">
+                    <a class="nav-link drpbtn" href="#"><img src="./images/help.svg" class="nav-imgs" alt="">help</a>
+                    <div class="dropmenu-content animate__animated animate__fadeInDownn">
+                      <a href="#">Traveller Help</a>
+                      <a href="#">Contact Us</a>
+
+                      <!-- <a href="#">Property Manager Help </a> -->
+                      <a href="#" class="property-button">List Your Property</a>
+                    </div>
+                  </li>
+                  <li class="nav-item top-link">
+                    <select class="selectpicker">
+                      <option selected data-content='<img src="./images/currency.svg" alt="" class="currency-image"><span> INR </span>'><img src="./images/currency.svg" alt="" class="currency-image">INR</option>
+                      <option data-content='<img src="./images/currency.svg" alt="" class="currency-image"> <span style="color: #222222;  font-family: "Roboto", sans-serif; font-size: 14px; align-items: center;"> USD </span>'>USD</option>
+                      <option data-content='<img src="./images/currency.svg" alt="" class="currency-image"><span> EUR </span>'>EUR</option>
+                    </select>
+                    
+                  </li>
+
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./images/currency.svg" alt="" class="currency-image"> currency
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"> <img src="./images/currency.svg" alt="" class="currency-image"> India</a>
+                    <a class="dropdown-item" href="#">
+                        <img src="./images/currency.svg" alt="" class="currency-image">dubai</a>
+                   
+                    <a class="dropdown-item" href="#">
+                        <img src="./images/currency.svg" alt="" class="currency-image">Usa</a>
+                  </div>
+                </li> -->
+                <!-- <li class="nav-item property">
+                  <a class="nav-link property-button" href="./list-your-property.html" >list your property</a>
+                </li> -->
+              </ul>
+              
+            </div>
+          </nav>
+    </header>
+    <section style="margin-top:72px">
+        <div class="banner">
+            <div class="text-heading">
+                <h3 class="text-white heading">
+                    Book your perfect holiday getaway, today
+                </h3>
+
+            </div>
+            <div class="social-top">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="social-iton-top">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+                <li>
+                  <a href="#" class="social-iton-top">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+                <li>
+                  <a href="#" class="social-iton-top">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              </ul>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section>
+            <div class="input-box">
+                <div class="container">
+                    <div class="placeholder"></div>
+                        <form action="" class="input-form">
+                            <div class="form-row justify-content-center">
+                                <div class="col-md-3 mb-4">
+                                  
+                                  <input type="text" onkeyup="myFunction()" class="form-control" id="location" placeholder="Enter a location" required>
+                                  <label for="location" class="location-label">Destination</label>
+                                  <img src="./images/location.png" alt="" class="input-icons" id="locationImg">
+                                  <ul id="myUL">
+                                    <li><a href="#">Mumbai <br> <span>Film City</span></a></li>
+                                    <li><a href="#">Goa <br> <span>Film City</span>
+                                      
+                                    </a></li>
+                                  
+                                    <li><a href="#">kedarnath <br>  <span>Film City</span>
+                                      
+                                     
+                                    </a></li>
+                                    <li><a href="#">Leh Ladakh  <br> <span>Film City</span>
+                                      
+                                      
+                                     
+                                    </a></li>
+                                  
+                                    <li><a href="#">Mysore <br><span>Film City</span>
+                                      
+                                      
+                                    </a></li>
+                                    <li><a href="#">Dubai <br><span>Film City</span>
+                                      
+                                      
+                                    </a></li>
+                                    <li><a href="#">BGJVHFBD  JB<br><span>Film City</span>
+                                      
+                                      
+                                    </a></li>
+                                  </ul>
+                                </div>
+
+
+                                <!-- <div class="t-datepicker col-md-4 px-0">
+                                  <div>
+                                    <div class="t-check-in col-md-6 mb-4 arrive">
+                                     
+                                    </div>
+                                   
+                                  </div>
+
+
+                                  <div class="position-relative">
+                                    <div class="t-check-out col-md-6 mb-4 depart">
+                                      
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="alert-information">Please select the Check In & Check Out dates!</div>
+                                </div> -->
+
+                                <div class="t-datepicker col-md-4 px-0">
+                                  <div class="t-check-in col-md-6 mb-4"></div>
+                                  <div class="t-check-out col-md-6 mb-4 "></div>
+                                </div>
+                                <input type="hidden" name="check-in-hidden-date" id="hidden-checkin-date" required>
+                                <input type="hidden" name="check-out-hidden-date" id="hidden-checkout-date" required>
+                                <!-- <div class="col-md-2 mb-4 arrive">
+                                 
+                                    <input type="text" class="form-control" id="arive-date"  required placeholder="Check in">
+                                    <label for="arive-date">Arrive</label>
+                                    <img src="./images/date.png" alt="" class="input-icons" id="arive-dateImg">
+                                  
+                                </div>
+                                <div class="col-md-2 mb-4 depart">
+                                  
+                                  <input type="text" class="form-control" id="Depart-date" required placeholder="Check out">
+                                  <label for="Depart-date">Depart</label>
+                                  <img src="./images/date.png" alt="" class="input-icons" id="Depart-dateImg">
+                                  
+                                </div> -->
+                                <div class="col-md-2 mb-4 guest-div">
+                                    
+                                    <!-- <input type="text" class="form-control" id="Guest" placeholder="Guest" required>
+                                    -->
+                                    
+                                    
+                                    <div class="dropdown">
+                                      <input type="text" class="form-control dropbtn" id="Guests" onfocus=showDropMenu()  required placeholder="Guests">
+                                      <label for="Guests" class="guest-label">Guest</label>
+
+                                      <img src="./images/users.png" alt="" class="input-icons" id="Depart-dateImg">
+                                      <div id="guestDropdown" class="dropdown-content">
+                                        
+                                        <div class="row align-items-center mx-0 mb-4">
+                                          <div class="count col-6">
+                                            <h6 class=""><span class="count-numbers">0 </span> Adults</h6>
+                                          </div>
+                                          <div class="col-6 ">
+                                            <div class="ml-auto d-flex">
+                                              <div class=" minus mx-2"><i class="fas fa-minus"></i></div>
+                                            <div class="plus"><i class="fas fa-plus"></i></div>
+</div>
+                                          </div>
+                                          
+                                            
+                                          </div>
+                                          <div class="row mx-0 align-items-center mb-4">
+                                            <div class="count col-6">
+                                              <h6 class=""><span class="count-numbers-child">0 </span> Children</h6>
+                                            </div>
+                                            <div class="col-6">
+                                              <div class="ml-auto d-flex">
+                                                <div class="minus-child mx-2"><i class="fas fa-minus"></i></div>
+                                              <div class=" plus-child"><i class="fas fa-plus"></i></div>
+  </div>
+                                            </div>
+                                            
+                                              
+                                            </div>
+                                           <div class="apply"><div id="apply-btn">Apply</div></div>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                    
+                                      <!-- <select class="form-control" id="Guests" required>
+                                        <option selected>Guest</option>
+                                        <option>2 Guest</option>
+                                        <option>3 Guest</option>
+                                        <option>4 Guest</option>
+                                        <option>5 Guest</option>
+                                      </select>
+                                      <img src="./images/users.png" alt="" height="25" class="input-icons" id="GuestImg"> -->
+                                      <div class="col-md-2 mb-4">
+                                    
+                                        <button class="btn search-btn" type="submit">Search</button>
+                                        
+                                      </div>
+                                  </div>
+                                 
+                            </div>
+                        </form>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="container">
+           <div class="content-inside">
+               <h3 class="holiday-experience">
+                Looking for a Holiday Experience in Chikkamagalur!
+               </h3>
+
+               <div class="row mx-0">
+                   <div class="col-md-12 col-lg-4 px-lg-0 px-xl-3">
+                    <p class="holiday-para">
+                        <!-- We have the perfect place for you to relax, refresh & rejuvenate
+                        The tans will fade, but the memories will last forever -->
+                        We have the perfect place for you to relax, refresh & rejuvenate in the midst of tranquil coffee estates, misty mountain ranges, gushing rivers, enchanting waterfalls and evergreen forests
+                        
+                        
+                       </p>
+                       <p class="holiday-para">
+                        Re-discover yourself in Chikmagalur, the tans will fade, but the memories will last forever
+                       </p>
+                       <div class="row mx-0 home ">
+                           <div class="image-icon">
+                               <a href="#">
+                                <img data-src="./images/home.png" class="icon-home" alt="">
+                                <span>Plan a vacation in Chikkamagalur</span>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="row mx-0 home ">
+                        <div class="image-icon">
+                            <a href="#">
+                              <img data-src="./images/multi-location.png" class="icon-loc" alt="">
+                            <span>Plan a journey within you</span>
+                            </a>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col-md-12 col-lg-8 px-0 px-md-0 px-lg-3">
+                       <div class="row mx-0">
+                           <div class="col-md-6"  data-aos="fade-up"
+                           data-aos-easing="ease-in-back"
+                           >
+                              <div class="image-content left">
+                                  <img data-src="./images/holidays-1.png" class="holiday-image" alt="">
+                                  <div class="text-holiday a .animate__animated ">
+                                    <p>
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque.
+                                    </p>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6"  data-aos="fade-up"
+                           data-aos-easing="ease-in-back"
+                           data-aos-delay="300">
+                            <div class="image-content right">
+                                <img data-src="./images/holidays-2.png" class="holiday-image" alt="">
+                                <div class="text-holiday b">
+                                  <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, atque.
+                                  </p>
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+              
+           </div>
+        </div>
+      <section class="featured">
+        <div class="featured-home-stay container mt-0">
+          <h3 class="featured-title">
+            Best Homestays in Chikmagalur 
+          </h3>
+          <p class="featured-para">
+            Homestays are a great way to travel on a budget while having an incredible authentic holiday experience while exploring the beauty and serenity of the region 
+          </p>
+        </div>
+        <section class="second-carousel mt-3 mb-3">
+          <section class="featured-excursions">
+            <div class="container">
+              
+      
+              <div id="page-wrapper ">
+                <div class="post-slider">
+                
+                  <div class="navigation">
+                    <div
+                    class="prev2"
+                    
+                  >
+                  <i class="fas fa-chevron-left"></i>
+                  </div>
+      
+                  <div
+                    class="next2"
+                    
+                  >
+                  
+                  <i class="fas fa-chevron-right"></i>
+                  </div>
+                  </div>
+                  <div class="post-wrapper carousel2">
+                    <div class="post">
+                      <div class="post-img">
+                        <img
+                          class="img1"
+                          data-src="./images/featured-1.png" 
+                         
+                        />
+      
+                      
+                      </div>
+      
+                      <div class="post-title px-3">
+                       <a href="#" class="text-dark text-decoration-none"><h3 class="featured-title"> Featured title</h3></a>
+                       <p class="card-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur eveniet repudiandae tempore excepturi nihil voluptatem eaque quo dignissimos ratione ex.
+                       </p>
+                      </div>
+                      <div class="rating px-3 ">
+                        <span class="d-flex">
+                          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="#" class="ml-auto book-now-btn">Book Now</a>
+                        </span> <br>
+                        
+                      </div>
+                    </div>
+      
+                    <div class="post">
+                      <div class="post-img">
+                        <img
+                        class="img1"
+                        data-src="./images/featured-2.png" 
+                      />
+      
+                        
+                      </div>
+      
+                      <div class="post-title px-3">
+                        <a href="#" class="text-dark text-decoration-none"><h3 class="featured-title"> Featured title</h3></a>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+                        </p>
+                       </div>
+                       <div class="rating px-3 ">
+                         <span class="d-flex">
+                           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="#" class="ml-auto book-now-btn">Book Now</a>
+                         </span> <br>
+                         
+                       </div>
+                    </div>
+      
+                    <div class="post">
+                      <div class="post-img">
+                        <img
+                        class="img1"
+                        data-src="./images/featured-3.png" "
+                      />
+      
+                       
+                      </div>
+      
+                      <div class="post-title px-3">
+                        <a href="#" class="text-dark text-decoration-none"> <h3 class="featured-title"> Featured title</h3></a>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                         
+                        </p>
+                       </div>
+                       <div class="rating px-3 ">
+                         <span class="d-flex">
+                           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="#" class="ml-auto book-now-btn">Book Now</a>
+                         </span> <br>
+                         
+                       </div>
+                    </div>
+      
+                    <div class="post">
+                      <div class="post-img">
+                        <img
+                          class="img1"
+                          data-src="./images/featured-4.png" 
+                        />
+      
+                       
+                      </div>
+      
+                      <div class="post-title px-3">
+                        <a href="#" class="text-dark text-decoration-none"> <h3 class="featured-title"> Featured title</h3></a>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        </p>
+                       </div>
+                       <div class="rating px-3 ">
+                         <span class="d-flex">
+                           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="#" class="ml-auto book-now-btn">Book Now</a>
+                         </span> <br>
+                         
+                       </div>
+                    </div>
+      
+                    <div class="post">
+                      <div class="post-img">
+                        <img
+                          class="img1"
+                          data-src="./images/featured-1.png" 
+                         
+                        />
+      
+                        
+                      </div>
+      
+                      <div class="post-title px-3">
+                        <a href="#" class="text-dark text-decoration-none"> <h3 class="featured-title"> Featured title</h3></a>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        </p>
+                       </div>
+                       <div class="rating px-3 ">
+                         <span class="d-flex">
+                           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="#" class="ml-auto book-now-btn">Book Now</a>
+                         </span> <br>
+                         
+                       </div>
+                    </div>
+                    <div class="post">
+                      <div class="post-img">
+                        <img
+                          class="img1"
+                          data-src="./images/featured-2.png" 
+                          
+                        />
+      
+                       
+                      </div>
+      
+                      <div class="post-title px-3">
+                        <a href="#" class="text-dark text-decoration-none"><h3 class="featured-title"> Featured title</h3></a>
+                        <p class="card-text">
+                         
+                        </p>
+                       </div>
+                       <div class="rating px-3 ">
+                         <span class="d-flex">
+                           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="#" class="ml-auto book-now-btn">Book Now</a>
+                         </span> <br>
+                         
+                       </div>
+                    </div>
+                    <div class="post">
+                      <div class="post-img">
+                        <img
+                          class="img1"
+                          data-src="./images/featured-3.png" 
+                          
+                        />
+      
+                       
+                      </div>
+      
+                      <div class="post-title px-3">
+                        <a href="#" class="text-dark text-decoration-none"><h3 class="featured-title"> Featured title</h3></a>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        </p>
+                       </div>
+                       <div class="rating px-3 ">
+                         <span class="d-flex">
+                           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="#" class="ml-auto book-now-btn">Book Now</a>
+                         </span> <br>
+                         
+                       </div>
+                    </div>
+                  
+                    <div class="post">
+                      <div class="post-img">
+                        <img
+                          class="img1"
+                          data-src="./images/featured-4.png" 
+                          
+                        />
+      
+                        
+                      </div>
+      
+                      <div class="post-title px-3">
+                        <a href="#" class="text-dark text-decoration-none"> <h3 class="featured-title"> Featured title</h3></a>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        </p>
+                       </div>
+                       <div class="rating px-3 ">
+                         <span class="d-flex">
+                           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="#" class="ml-auto book-now-btn">Book Now</a>
+                         </span> <br>
+                         
+                       </div>
+                    </div>
+                    <div class="post">
+                      <div class="post-img">
+                        <img
+                          class="img1"
+                          data-src="./images/holidays-1.png" 
+                        />
+      
+                       
+                      </div>
+      
+                      <div class="post-title px-3">
+                        <a href="#" class="text-dark text-decoration-none"> <h3 class="featured-title"> Featured title</h3></a>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        </p>
+                       </div>
+                       <div class="rating px-3 ">
+                         <span class="d-flex">
+                           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="#" class="ml-auto book-now-btn">Book Now</a>
+                         </span> <br>
+                         
+                       </div>
+                    </div>
+                  </div>
+      
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+
+      <section class="popular-homes">
+        <div class="homes container">
+          <div class="homes-heading">
+            <h3 class="headeing-for-homes">
+              Popular homes in Chikkamagalur
+            </h3>
+            <p class="para-for-homes">
+              Holiday cottages, luxurious villas & family resorts offer you the perfect opportunity to nature's tranquility. Experience an enriching holiday at some of the best homestays
+            </p>
+          </div>
+          <div class="row mx-0 row-for-homes">
+            <div class="col-md-6">
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="false"  data-pause="hover">
+                <!-- <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol> -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img data-src="./images/popular-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                     <div class="row mx-0">
+                       <div class="texts">
+                       <a href="#" class="text-white text-decoration-none" > <h3>The Serial Chikmaglur fbdfjjdn dfgjkdfn </h3></a>
+                        <p class="text-left">Hotels</p>
+                       </div>
+                       <div class="button">
+                         <a href="#" class="btn">Book Now</a>
+                       </div>
+                     </div>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img data-src="./images/popular-3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                      <div class="row mx-0">
+                        <div class="texts">
+                          <a href="#" class="text-white text-decoration-none" > <h3>The Serial Chikmaglur</h3></a>
+                         <p class="text-left">Hotels</p>
+                        </div>
+                        <div class="button">
+                          <a href="#" class="btn">Book Now</a>
+                        </div>
+                      </div>
+                       
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img data-src="./images/popular-4.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                      <div class="row mx-0">
+                        <div class="texts">
+                          <a href="#" class="text-white text-decoration-none" > <h3>The Serial Chikmaglur</h3></a>
+                         <p class="text-left">Hotels</p>
+                        </div>
+                        <div class="button">
+                          <a href="#" class="btn">Book Now</a>
+                        </div>
+                      </div>
+                       
+                     </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 px-0">
+              <div class="col right-col px-0">
+                <div class="row mx-0 right-row">
+                  <div class="col-md-6"  data-aos="fade-up"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="00">
+                   <div class="image-content-homes mb-3">
+                    <img data-src="./images/popular-1.png" class="d-block w-100" alt="...">
+                    <div class="image-texts-top">
+                      <a href="#"><h6 class="overlay-text">Ressorts</h6></a>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="col-md-6   "   data-aos="fade-up"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300">
+                    <div class="image-content-homes mb-3">
+                      <img data-src="./images/popular-3.png" class="d-block w-100" alt="...">
+                      <div class="image-texts-top">
+                        <a href="#"><h6 class="overlay-text">Cottages</h6></a>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col right-col px-0">
+                <div class="row mx-0 right-row">
+                  <div class="col-md-6 mb-sm-3 mb-md-0"  data-aos="fade-up"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="600" >
+                    <div class="image-content-homes third">
+                      <img data-src="./images/popular-4.png" class="d-block w-100" alt="...">
+                      <div class="image-texts-bottom">
+                        <a href="#"><h6 class="overlay-text">Villas</h6></a>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 mb-sm-3 mb-md-0"  data-aos="fade-up"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="900" >
+                    <div class="image-content-homes">
+                      <img data-src="./images/popular-1.png" class="d-block w-100" alt="...">
+                      <div class="image-texts-bottom bot-2">
+                        <a href="#"><h6 class="overlay-text">Homestays</h6></a>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container  explore-cont">
+          <div class="row mx-0 explore-container">
+              <div class="col-md-12 col-lg-6">
+                <div class="col px-0">
+                  <div class="explore-heading">
+                    
+                      <h3 class="explore-heading-text">
+                        Explore Chikkamagalur with us
+                      </h3>
+                    
+                  </div>
+                  <div class="explore-para">
+                    <p>
+                      There are numerous interesting places to explore in and around Chikmagalur either by trekking, cycling or other means of transport
+                    </p>
+                  </div>
+                </div>
+                <div class="col px-0">
+                  <div class="row mx-o">
+                    <div class="col-md-6 col-lg-6"  data-aos="fade-up"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="00">
+                      <div class="explore-left-image-container left-img">
+                        <img data-src="./images/explore-3.png" alt="" class="w-100">
+                        <div class="explore-left-image-container-text ">
+                          <div>
+                            <a href="#" class="text-decoration-none text-white"><h3>Lorem ipsum dolor sit </h3></a>
+                          <p class="left-side-para left-side">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, perspiciatis!
+                          </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6"  data-aos="fade-up"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300">
+                      <div class="explore-left-image-container right-img">
+                        <img data-src="./images/explore-2.png" alt="" class="w-100">
+                        <div class="explore-left-image-container-text ">
+                          <div>
+                            <a href="#" class="text-decoration-none text-white"><h3>Lorem ipsum dolor sit </h3></a>
+                          <p class="left-side-para right-side">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, perspiciatis!
+                          </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <div id="carouselExampleCaptions2" class="carousel slide" data-ride="carousel">
+                  <!-- <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  </ol> -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img data-src="./images/explore-3.png" class="d-block w-100" alt="...">
+                      <div class="carousel-caption  ">
+                        <div>
+                          <h5><img src="./images/explore-icon.svg" class="mr-4" alt=""><a href="#" class=" text-white text-decoration-none">Lorem ipsum dolor sit amet, consetetur</a></h5>
+                          <p class="text-carousel">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias consectetur culpa enim maiores voluptate in inventore sed sit deleniti atque?
+                          </p>
+                         </div>
+                        
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img data-src="./images/explore-1.png" class="d-block w-100" alt="...">
+                      <div class="carousel-caption  ">
+                        <div>
+                          <h5><img src="./images/explore-icon.svg" class="mr-4" alt=""><a href="#" class=" text-white text-decoration-none">Lorem ipsum dolor sit amet, consetetur</a></h5>
+                          <p class="text-carousel">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias consectetur culpa enim maiores voluptate in inventore sed sit deleniti atque?
+                          </p>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img data-src="./images/explore-2.png" class="d-block w-100" alt="...">
+                      <div class="carousel-caption  ">
+                       <div>
+                        <h5><img src="./images/explore-icon.svg" class="mr-4" alt=""><a href="#" class=" text-white text-decoration-none">Lorem ipsum dolor sit amet, consetetur</a></h5>
+                        <p class="text-carousel">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias consectetur culpa enim maiores voluptate in inventore sed sit deleniti atque?
+                        </p>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleCaptions2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="choose-section"> 
+        <div class="container why-choose">
+          <div class="choose-heading">
+            <h3 class="choose-heading-text">
+              Why Choose Us
+            </h3>
+            <p class="choose-para">
+              We pride ourselves in assisting you with planning your vacation for a great experience followed by a lifetime of wonderful memories and remarkable moments
+            </p>
+
+          </div>
+          <div class="choose-content">
+            <div class="row  justify-content-center my-5 ">
+              <div class="col-md-2">
+                <div class="image-choose-content">
+                  <img src="./images/service.svg"  id="services" alt="">
+                </div>
+                <div class="img-title">
+                  <h5 class="title">Great Services</h5>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="image-choose-content">
+                  <img src="./images/travel.svg" alt="" id="travel">
+                </div>
+                <div class="img-title">
+                  <h5 class="title">Passionate Travel</h5>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="image-choose-content">
+                  <img src="./images/money.svg" alt="" id="money">
+                </div>
+                <div class="img-title">
+                  <h5 class="title">Value for Money</h5>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="image-choose-content">
+                  <img src="./images/booking.svg" alt="" id="booking">
+                </div>
+                <div class="img-title">
+                  <h5 class="title">Fast Booking</h5>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="image-choose-content">
+                  <img src="./images/support.svg" alt="" id="support">
+                </div>
+                <div class="img-title">
+                  <h5 class="title mb-0">Support Team</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+          <div class="container">
+            <div class="row mx-0">
+              <div class="col-md-6 px-0">
+                <h3 class="blog-title">
+                  Our Blog
+                </h3>
+                <div class="blog-image-container">
+                  <img data-src="./images/blog.png" alt="" class="w-100">
+                  <div class="image-infos">
+                   <div>
+                    <p class="dates">March 14th, 2019</p>
+                    <a href="#" class="text-decoration-none"><h3 class="infos-heading">Best places to visit in Chikmagalur</h3></a>
+                    <p class="infos-para">
+                      Mountains, vast stretches of greens and stunning natural beauty--if these are the things that make you happy as a traveller then there are very few places that can be better than Chikmagalur.
+                    </p>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 px-0">
+                <h3 class="testimonial-title">Testimonials</h3>
+                <div class="testimonial-content">
+                  <div class="col main-col px-0"  data-aos="fade-up"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300">
+                   <div class="inside-col px-md-3">
+                    <div class="col px-0">
+                      <p class="info">
+                        The place Shanthi Kunnj was brilliant. It was located inside a coffee estate at the banks of river Bhadra. I really wish we had stayed here for one more day. 
+                        l,fgf ffbfdhbfgjmnfn cvb nvjnvbmn vbbmm bmbvmb
+                       </p>
+                    </div>
+                    <div class="col px-0">
+                      <div class="row mx-0">
+                        <div class="col-4 col-lg-3 col-xl-2 pr-0 d-flex justify-content-center  ">
+                          <img data-src="./images/georgia-01.jpg" alt="" class="avatar">
+                        </div>
+                        <div class="col-6">
+                          <div class="name-holder">
+                            <h3 class="name"> SUman</h3>
+                          </div>
+                          <span> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="col main-col px-0"  data-aos="fade-up"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="00">
+                    <div class="inside-col px-md-3">
+                      <div class="col px-0">
+                        <p class="info">
+                          The place Shanthi Kunnj was brilliant. It was located inside a coffee estate at the banks of river Bhadra. I really wish we had stayed here for one more day. 
+                         </p>
+                      </div>
+                      <div class="col px-0">
+                        <div class="row mx-0">
+                          <div class="col-4 col-lg-3 col-xl-2 pr-0 d-flex justify-content-center  ">
+                            <img data-src="./images/georgia-01.jpg" alt="" class="avatar">
+                          </div>
+                          <div class="col-6">
+                            <div class="name-holder">
+                              <h3 class="name"> SUman</h3>
+                            </div>
+                            <span> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+     
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row mx-0">
+            <div class="logo-footer col-sm-12 col-md-5 col-lg-4 col-xl-3">
+              <img src="./images/logo-footer.png" class="w-100" alt="">
+            </div>
+            <div class="social">
+              <a href="#" class="social-icon-bottom">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="social-icon-bottom">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon-bottom">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            
+          </div>
+          <div class="row mx-0 Links-all">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="col-heading contact">
+                Contact Info
+              </div>
+              <div class="contact-info ">
+                <div class="row mx-0">
+                  <div class="col-1 pl-0"><img src="./images/footer-loc.svg" alt=""></div>
+                  <div class="col-md-8 col-10 col-sm-10 ">
+                    <h6 class="text">Akshya Nagar 1st Block 1st Cross, 
+                      Rammurthy nagar, Bangalore-560016 </h6>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="contact-info ">
+                <div class="row mx-0">
+                  <div class="col-1 pl-0"><img src="./images/footer-call.svg" alt=""></div>
+                  <div class="col-8">
+                    <h6 class="text">0091 258 666 66 </h6>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="contact-info ">
+                <div class="row mx-0">
+                  <div class="col-1 pl-0"><img src="./images/footer-mail.svg" alt=""></div>
+                  <div class="col-8">
+                    <h6 class="text">info@gochikmagalur.com</h6>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="contact-info ">
+                <div class="row mx-0">
+                  <div class="col-1 pl-0"><img src="./images/footer-s.svg" alt=""></div>
+                  <div class="col-8">
+                    <h6 class="text">go.chikmagalur</h6>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
+              <div class="col-heading links">
+                Quick Links
+              </div>
+              <div>
+                <ul class="list-unstyled quick-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Rooms</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">Career</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
+              <div class="col-heading links">
+                Quick Links
+              </div>
+              <div>
+                <ul class="list-unstyled quick-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Rooms</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">Career</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <div class="social-mobile">
+                <img src="./images/insta.svg" alt="">
+                <img src="./images/twitter.svg" alt="">
+                <img src="./images/fb.svg" alt="">
+              </div>
+              <div class="col-heading newsletter">
+                Newsletter
+              </div>
+              <div class="newsletter-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy e
+                </p>
+                <div class="row mx-0 ">
+                  <div class="col-sm-12 col-md-8 px-0 mb-3">
+                    <form  id="newsletter" onsubmit="showMessage()">
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                    <img src="./images/email.png" class="email-icon" id="emailImg" alt="">
+                  </div>
+                  <div class="col-sm-12 col-md-4 px-0 px-md-2">
+                    <button class="btn send" type="submit">Send</button>
+                  </div>
+                    </form>
+                </div>
+                <div class="image-card-heading">
+                  Accepted Cards
+                </div>
+                <div class="cards-image">
+                  <img src="./images/american.svg" alt="">
+                  <img src="./images/visa.svg" alt="">
+                  <img src="./images/master.svg" alt="">
+                  <img src="./images/paypal.svg" alt="">
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col copywright">
+            Copyright ©gochikmagalur All rights reserved
+          </div>
+        </div>
+      </footer>
+      
+      
+      <a href="#" class="crunchify-top">↑</a>
+
+    
+<div class="message-box">
+  <h6 class="message-text"></h6>
+</div>
+
+
+<div class="alert alert-dismissible text-center cookiealert show" role="alert">
+  <div class="cookiealert-container">
+       We use cookies to ensure you get the best experience on our website. <a href="#" target="_blank" >Learn more</a>
+
+      <button type="button" class="btn btn-success btn-sm acceptcookies" aria-label="Close">
+         Ok
+      </button>
+  </div>
+</div>
+
+
+<!-- <input type="text" name="dates"> -->
+   <!-- bootstrap -->
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script
+   type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+ ></script>
+ 
+ <!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+
+   <!-- end -->
+   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" /> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
+<script src="./js/carousel.js"></script>
+<script src="./js/index.js"></script>
+<!-- <script src="./js/datepicker.js"></script> -->
+<script src="./js/signup.js"></script>
+<!-- <script src="./js/t-datepicker.js"></script> -->
+<script src="./t.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+  AOS.init();
+  
+
+  $('.placeholder').hide()
+  $('.form-row').css({"display":"flex"})
+  var lazyLoadInstance = new LazyLoad({
+    elements_selector: "img"
+    // ... more custom settings?
+});
+lazyLoadInstance.update();
+</script>
+</body>
+</html>
