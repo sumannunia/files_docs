@@ -1,0 +1,525 @@
+/* ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(45, 59, 255, 0.302);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(191, 18, 253, 0.5);
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    line-height: 1.618;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: grayscale;
+	overflow-x: hidden;
+  }
+h1{font-weight:700;font-size:23px;}
+h2{font-weight:700;font-size:21px;}
+h3{font-weight:700;font-size:20px;}
+h4{font-weight:700;font-size:18px;}
+h5{font-weight:700;font-size:18px;}
+h1, h2, h3, h4, h5, h6 {
+    color: #050505;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+a:hover, a:focus, a:active {
+    color: #010508;
+}
+.content a {
+    color: #ffffff;
+}
+
+.notice {
+    max-width: 25rem;
+}
+.sign-button {
+    max-width: 100%;
+}
+.sign-button {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+.input-box,
+textarea,
+.sign-button {
+	width: 45rem !important;
+	min-height: 3rem;
+}
+button {
+    max-width: 100%;
+}
+.pwa-button {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 32px;
+    padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+	width: 15rem !important;
+	min-height: 3rem;
+}
+.is-horizontal-center {
+    justify-content: center;
+  }
+.buttonpwa {
+	display: inline-flex;
+	margin: 4px 0;
+	padding: 8px 16px;
+	border-radius: 4px;
+	background-color: rgb(253, 98, 37);
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+.buttonpwa:hover {
+    background-color: rgb(248, 221, 68);
+}
+code {
+    word-break: break-all;
+}
+pre code {
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+.search-output {
+    text-align: center;
+    margin: 0 auto;
+}
+.search-output {
+    max-width: 25rem;
+}
+.card-content.login {
+    background-color: #ffe96e;
+    box-shadow: 0 2px 4px #5351464d;
+    border-radius: 32px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+    }
+    .card-content.login {
+        border: none;
+        padding-top: 50px;
+        padding-bottom: 50px;
+}
+.user-form {
+    font-family: 'Lato', sans-serif;
+  }
+.user-form p {
+    letter-spacing: .03em;
+    line-height: 20px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #221f1f;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+.user-form button {
+    display: flex;
+    flex-grow: 0.3;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 32px;
+    padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+.user-form li {
+    line-height: 20px;
+    margin-bottom: 21px;
+    word-wrap: break-word;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #221f1f;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+.user-form input {
+    display: flex;
+    flex-grow: 0.3;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 32px;
+    padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+.textbox {
+    display: flex;
+    flex-grow: 0.3;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 32px;
+    padding: 12px;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+blockquote {
+    letter-spacing: .03em;
+    font-family: 'Lato', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+  }
+  .content h1 {
+    font-size:21px;
+    font-weight: 700;
+}
+.content h2 {
+    font-size:21px;
+    font-weight: 700;
+}
+.content h3 {
+    font-size:20px;
+    font-weight: 700;
+}
+.content h4 {
+    font-size:18px;
+    font-weight: 700;
+}
+p {
+    letter-spacing: .03em;
+    word-wrap: break-word;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #221f1f;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+.score {
+    letter-spacing: .03em;
+    word-wrap: break-word;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #221f1f;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
+hr {
+    background-color: #00b894;
+}
+footer p {
+    font-size: 15px;
+    font-weight: 700;
+}
+ */
+
+#hiddenhtml {
+  display: none;
+}
+div.teamDetail {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background: darkblue;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+.divider {
+  height: 1px;
+  background-color: #f3f3f3;
+}
+.match-comment-run {
+  margin-right: 0.5rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #d4d4d4;
+}
+.match-comment-run-six {
+  background: #7a41d8;
+  color: #fff;
+}
+.match-comment-run-four {
+  background: #094;
+  color: #fff;
+}
+.runs-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.app-about,
+.card,
+.comment-container,
+.hint-content,
+.language-card,
+.match-finder-tabs,
+.notification-card,
+.player-finder-tabs,
+.table-page .head,
+.team-info,
+.team-scores-page .team-scores-tabs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid transparent;
+  border-radius: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+.d-flex {
+  display: flex !important;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.live-scorecard .recent-runs {
+  padding: 1rem;
+  overflow: hidden;
+}
+.runs-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.recent-actvity {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  background: slategrey;
+}
+.font-weight-bold.text-uppercase.label.pr-3 {
+  color: #fff;
+  margin-right: 1rem;
+}
+thead tr {
+  background: slategrey;
+  color: #fff;
+}
+.current-run-rate-bro .current-run-rate {
+  display: flex;
+  column-gap: 1rem;
+}
+.run-taes-sec {
+  display: flex;
+  column-gap: 2rem;
+  font-size: 18px;
+  font-weight: 600;
+  flex-wrap: wrap;
+  row-gap: 1.25rem;
+  padding: 1rem 10px;
+  background: slategrey;
+  color: #fff;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkblue;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 48px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 4px;
+}
+.name-detail {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 48px;
+  font-family: "Anton", sans-serif;
+}
+.name-detail a {
+  color: #fff;
+  text-decoration: none !important;
+}
+.name-detail img {
+  width: 50px;
+  display: none;
+}
+.teams-datas {
+  padding: 15px 0;
+  background-color: darkblue;
+}
+div#current-run-rate-bro {
+  display: flex;
+  column-gap: 1rem;
+  color: #fff;
+}
+.stats-value {
+  color: #fff !important;
+}
+a.player-name {
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  width: 139px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  div.teamDetail {
+    font-size: 16px;
+  }
+  .name-detail {
+    font-size: 15px;
+  }
+  table th,
+  table td {
+    padding: 0.651rem 0.2rem !important;
+  }
+  table {
+    overflow: auto;
+    width: max-content;
+  }
+  p.name {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .status-text {
+    font-size: 14px;
+  }
+  a.player-name {
+    font-size: 14px;
+  }
+  span.score-info {
+    font-size: 14px;
+  }
+  .score-detail {
+    display: flex;
+    font-size: 14px;
+  }
+}
+
+.vs-container {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.team-a img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.vs-text {
+  font-size: 48px;
+  font-family: "Anton", sans-serif;
+}
+table:nth-child(2) {
+  display: none;
+}
+
+.innings-stat table td,
+.innings-stat table th,
+.match-story-content .story-container table td,
+.match-story-content .story-container table th,
+.page-story-content .story-container table td,
+.page-story-content .story-container table th,
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #edeef0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.team-score-list {
+  display: flex;
+  justify-content: center;
+}
+table.table.table-left.mb-0.table-responsive {
+  width: max-content;
+}

@@ -1,0 +1,385 @@
+:root {
+  --cursive: "Ballet", cursive;
+  --mon: "Montez", cursive;
+  --mont: "Montserrat", sans-serif;
+  --sans: "PT Sans", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-family: var(--cursive);
+  font-size: 24px;
+  color: #fff !important;
+}
+#navbarSupportedContent .nav-link {
+  font-family: var(--mont);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+.bg-light {
+  background-image: linear-gradient(90deg, #b0dc5e 0, #8ddcb8 100%);
+}
+
+.theTop-bannerSection {
+  /* background-image: url(http://namebirthdaycakes.net/images/cake-banner.jpg); */
+  color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 0;
+  background-image: linear-gradient(90deg, #b0dc5e 0, #8ddcb8 100%);
+}
+h3.thebrandname {
+  font-family: var(--mont);
+  font-size: 24px;
+  text-align: center;
+}
+h3.descrip {
+  font-family: var(--mon);
+  font-size: 24px;
+  text-align: center;
+}
+p.the-descrip-top {
+  text-align: center;
+  margin-top: 2.25rem;
+  font-size: 14px;
+  max-width: 400px;
+  margin: 2.25rem auto 0;
+  font-family: var(--sans);
+}
+button.btn.theCakeFormTopbtn {
+  color: #fff;
+  width: 90%;
+  background: #0cc30ccf;
+  border: 2px solid #fff;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+p.thecaution-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 12px;
+  color: indianred;
+}
+.inside-the-right-col-top-banner {
+  margin: auto;
+  padding: 15px 10px;
+  background: #8c87878a;
+  border-radius: 5px;
+  max-width: 350px;
+}
+h5.theform-heading {
+  text-align: center;
+  font-family: var(--sans);
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: inherit;
+}
+.image-container {
+  height: 280px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: white;
+  position: relative;
+}
+
+article.main-content {
+  padding: 2rem 0;
+  background: #f3f3f3;
+}
+.name-section {
+  max-width: 300px;
+  font-size: 14px;
+  margin: auto;
+}
+.namesection {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  font-family: var(--mon);
+  /* text-transform: capitalize; */
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.inside-card-col {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+button.btn.downloadbtn {
+  display: flex;
+  margin: auto;
+  background: #3cb09b;
+  color: #fff !important;
+  font-size: 14px;
+  font-family: var(--sans);
+  letter-spacing: 1px;
+  column-gap: 0.5rem;
+  align-items: center;
+  width: 140px;
+  align-items: center;
+  justify-content: center;
+}
+div#theRowForCols {
+  row-gap: 1.25rem;
+}
+.spinner-border.theButtonspinner {
+  width: 12px;
+  height: 12px;
+}
+.image-container-for-theresult img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.image-container-for-theresult {
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #fff;
+}
+
+/* ---for-input */
+*:focus {
+  outline: none;
+}
+
+/* body {
+  background-color: #efefef;
+  padding: 70px;
+  font-family: "Open Sans", "Arial", snas-serif;
+} */
+
+.input-group {
+  display: block;
+  width: 441px;
+  max-width: 100%;
+  height: 50px;
+  border: 0;
+  background-color: #ffffff;
+  border-bottom-left-radius: 41px;
+  border-bottom-right-radius: 41px;
+  border-top-left-radius: 41px;
+  border-top-right-radius: 0;
+  box-shadow: 0 17px 40px 0 rgba(75, 128, 182, 0.07);
+  /* margin-bottom: 22px; */
+  position: relative;
+  font-size: 17px;
+  color: #a7b4c1;
+  transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+}
+
+.input-group:hover {
+  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.077);
+}
+
+.input-group input {
+  position: absolute;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent !important;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  padding: 0 53px;
+  box-sizing: border-box;
+  z-index: 3;
+  display: block;
+  color: #1a6fc4;
+  font-size: 17px;
+  font-family: "Oxygen", sans-serif;
+  transition: top 0.1s ease-in-out;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.input-group input::placeholder {
+  color: rgba(0, 0, 0, 0);
+}
+
+.input-group input:focus,
+.input-group input:not(:placeholder-shown) {
+  top: 17px;
+}
+
+.input-group label {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 0 53px;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+  cursor: text;
+  margin-bottom: 0;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  bottom: 20px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.req-mark {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  right: 33px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 22px;
+  color: #e0e0e0;
+  font-family: "Ubuntu", sans-serif;
+}
+.input-group > .custom-file,
+.input-group > .custom-select,
+.input-group > .form-control,
+.input-group > .form-control-plaintext {
+  width: 100%;
+}
+
+/* -footer */
+ul.list-unstyled.footer-ul {
+  display: flex;
+  column-gap: 0.7rem;
+  font-size: 14px;
+  margin-bottom: 0;
+  justify-content: center;
+}
+li.the-footer-li {
+  background: #fff;
+  box-shadow: 0 0 7px #d4d4d4;
+  padding: 3px 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+li.the-footer-li a {
+  color: #3cb09b;
+  font-size: 13px;
+  font-family: var(--sans);
+}
+footer.footer-side {
+  background: #1c1c1e;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5.theBirhdayWIsherPage {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1.25rem;
+  color: #fff;
+}
+h5.theBirhdayWIsherPage span {
+  font-family: "Ballet";
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: red;
+}
+.theResultPage {
+  min-height: calc(100vh - 129px);
+}
+.buttonforpagehandel {
+  display: flex;
+  column-gap: 0.6rem;
+}
+span.navbar-toggler-icon {
+  background: #eef0f1;
+}
+
+/* share */
+.icons-for-share {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  font-size: 32px;
+}
+a.text-decoration-none.whatsappshareIcon {
+  color: #fff;
+  background: green;
+  padding: 10px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a.text-decoration-none.fbshareIcon {
+  color: #fff;
+  background: #057bff;
+  padding: 10px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article.thecontent-paras {
+  margin-top: 3rem;
+}
+
+/* para */
+.heading-ofpara {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--mont);
+}
+p.thecontent-para {
+  font-size: 14px;
+  font-family: var(--sans);
+}
+.large-heading {
+  font-size: 32px;
+}
+@media screen and (max-width: 600px) {
+  .image-container {
+    height: 300px;
+  }
+  .namesection {
+    font-size: 24px;
+    bottom: 15px;
+  }
+  .large-heading {
+    font-size: 20px;
+  }
+  h3.thebrandname {
+    font-size: 20px;
+  }
+  .buttonforpagehandel {
+    margin-top: 1rem;
+  }
+}
+/* a.dmca-badge {
+  padding-right: 1rem;
+} */

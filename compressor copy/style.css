@@ -1,0 +1,322 @@
+nav ul li{
+    display:inline-block;
+    text-decoration: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    padding: 70px;
+    background-color:#b3ffb3 ;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+color:white;
+font-size: 17px;
+padding: 17px 13px;
+border-radius: 3px;
+text-transform: uppercase;
+padding: 20px;
+background-color:#003300;
+}
+a:hover{
+    color: yellow;
+}
+a.con{
+    position: relative;
+    left: 500px;
+}
+a.active{
+    position: relative;
+    left: 200px;
+}
+ article{
+    background-color: #f2f2f2;
+    width: 1050px;
+    height: 3400px;
+    position: relative;
+    left: 170px;
+   
+} 
+h2{
+color:#ff9900 ;
+font-size: 25px;
+position: relative;
+left: 20px;
+font-family: 'Russo One', sans-serif;
+}
+p{
+    font-size: 20px;
+    position: relative;
+    left: 20px; 
+    font-style: italic;
+}
+ul,ol{
+    font-size: 20px;
+    position: relative;
+    left: 20px; 
+    font-style: italic;
+}
+#main_menu{
+    width: 100%;
+    position: relative;
+}
+.logo_area{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left:55%;
+    top: 10%;
+    margin-left: -150px;
+}
+img{
+    width: 140px;
+    height: 130px;
+}
+body{
+    background-color:#f2f2f2;
+}
+footer{
+    padding:40px;
+    background-color:black;  
+}
+footer a{
+    position: relative;
+    left: 550px;
+    color: blanchedalmond;
+}
+
+@media (max-width:600px){
+    nav ul li{
+        display:inline-block;
+        text-decoration: none;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    nav{
+        padding: 40px;
+        background-color:#b3ffb3 ;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 30px;
+        margin: 0 5px;
+    }
+    nav ul li a{
+    color:white;
+    font-size: 10px;
+    padding: 10px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color:#003300;
+    }
+    a:hover{
+        color: yellow;
+    }
+    a.con{
+        position: relative;
+        left: 100px;
+    }
+    a.active{
+        position: relative;
+        left: 50px;
+    }
+    article{
+        background-color: #f2f2f2;
+        width: 270px;
+        height: 4700px;
+        position: relative;
+        left: 25px;
+        
+    } 
+    h2{
+        color:#ff9900 ;
+        font-size: 15px;
+        position: relative;
+        left:15px;
+        font-family: 'Russo One', sans-serif;
+
+        }
+        p{
+            font-size:15px;
+            position: relative;
+            left: 15px; 
+            font-style: italic;
+        }
+
+        ul,ol{
+            font-size: 15px;
+            position: relative;
+            left: 20px; }
+}
+
+@media (max-width:600px){
+.logo_area{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left:235px;
+    top: 10%;
+    margin-left:-150px;
+}
+#main_menu{
+    width: 100%;
+    position: relative;
+}
+}
+
+@media (max-width:600px){
+
+footer{
+    padding: 40px;
+    position: relative;
+    left: 10px;
+}
+ footer a{
+     position: relative;
+     left: 100px;
+     font-size: 10px;
+ }
+}
+@media (max-width:600px){
+
+
+    img{
+        width: 60px;
+        height: 60px;}
+
+        a.con{
+            position: relative;
+            left: 20px;
+            font-size: 7px;
+        }
+        a.active{
+            position: relative;
+            left:-50px;
+            font-size: 7px;
+        }
+        nav ul li{
+            display:inline-block;
+            text-decoration: none;
+        }
+    }
+    
+
+
+
+
+   
+
+
+@media(min-width:1500px){
+    nav ul li{
+        display:inline-block;
+        text-decoration: none;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    nav{
+        padding: 70px;
+        background-color:#b3ffb3 ;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+    nav ul li a{
+    color:white;
+    font-size: 17px;
+    padding: 17px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 20px;
+    background-color:#003300;
+    }
+    a:hover{
+        color: yellow;
+    }
+    a.con{
+        position: relative;
+        left: 500px;
+    }
+    a.active{
+        position: relative;
+        left: 200px;
+    }
+     article{
+        background-color: #f2f2f2;
+        width: 1050px;
+        height: 3400px;
+        position: relative;
+        left: 170px;
+       
+    } 
+    h2{
+    color:#ff9900 ;
+    font-size: 25px;
+    position: relative;
+    left: 20px;
+    font-family: 'Russo One', sans-serif;
+    }
+    p{
+        font-size: 20px;
+        position: relative;
+        left: 20px; 
+        font-style: italic;
+    }
+    ul,ol{
+        font-size: 20px;
+        position: relative;
+        left: 20px; 
+        font-style: italic;
+    }
+    #main_menu{
+        width: 100%;
+        position: relative;
+    }
+    .logo_area{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left:55%;
+        top: 10%;
+        margin-left: -150px;
+    }
+    img{
+        width: 140px;
+        height: 130px;
+    }
+    body{
+        background-color:#f2f2f2;
+    }
+    footer{
+        padding:40px;
+        background-color:black;  
+    }
+    footer a{
+        position: relative;
+        left: 550px;
+        color: blanchedalmond;
+    }
+    
+}

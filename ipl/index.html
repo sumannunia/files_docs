@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="HandheldFriendly" content="True" />
+<meta name="theme-color" content="#ffffff">
+<link rel="shortcut icon" href="assets/icons/Icon-48.png"/>
+<!-- <?php $current_page = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+ echo '<link rel="canonical" href="'.$current_page.'"/>'; ?> -->
+
+
+<title>Live IPL Cricket Score 🏏</title>
+<meta name="description" content="Free online - Live IPL Cricket Score." />
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Live Score">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+<meta name="apple-mobile-web-app-title" content="Live Score">
+
+<link rel="apple-touch-icon" sizes="48x48" href="assets/icons/Icon-48.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/icons/Icon-72.png">
+<link rel="apple-touch-icon" sizes="96x96" href="assets/icons/Icon-96.png">
+<link rel="apple-touch-icon" sizes="144x144" href="assets/icons/Icon-144.png">
+<link rel="apple-touch-icon" sizes="192x192" href="assets/icons/Icon-192.png">
+<link rel="apple-touch-icon" sizes="256x256" href="assets/icons/Icon-256.png">
+<link rel="apple-touch-icon" sizes="512x512" href="assets/icons/Icon-512.png">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="./assets/css/app.css">
+</head>
+<body>
+
+<section class="section d-none">
+<!-- <div class="container">
+<div class="column is-half is-offset-one-quarter">
+<div class="card-content content user-form login">
+<h1 class="title has-text-centered">Hello IPL 🏏</h1>
+<hr>
+<p class="has-text-centered">Live IPL Score 🔥</p><br>
+<div id="liveipl"></div>
+<br>
+<div class="buttons is-centered">
+<button class="button is-success pwa-button" onClick="window.location.reload(true);">Refresh Score</button>
+</div>
+<br>
+<p class="has-text-danger has-text-weight-bold" style="font-size:14px; margin:15px;">
+Auto Refresh Every 1 Minutes <br>
+Bookmark our site link - we will Update the live match details every day. Score May delay due to Scraping Content is Not Updated Frequently Just Refresh the page to Get Live Score.
+</p>
+</div>
+</div>
+</div> -->
+<div class="container-for-html" id="hiddenhtml">
+</div>
+
+</section>
+    <section class="infodata" id="themaindatacontainer">
+        <div class="container-fluid">
+            <div class="inside-container">
+                <div class="teams-lis">
+                    <!-- <div class="team1 teamDetail" id="team1">
+                        <div class="team-name" id="team-2-name">Sun rises hyderabad</div>
+                        <div class="team-score" id="teamScore1">
+                            <span>
+                                <span class="runs-total" id="team1-total-run">200</span> /
+                                <span class="team-wicket" id="team1-wickets">5</span>
+                            </span>
+                            <span class="team-over" id="team1-overs">(14.5)</span>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="team1 teamDetail" id="team2">
+                        <div class="team-name" id="team-2-name">Kolkata Knight riders</div>
+                        <div class="team-score" id="teamScore1">
+                            <span>
+                                <span class="runs-total" id="team1-total-run">200</span> /
+                                <span class="team-wicket" id="team1-wickets">5</span>
+                            </span>
+                            <span class="team-over" id="team1-overs">(14.5)</span>
+                        </div>
+                    </div> -->
+                <div class="teams-datas" id="team-names">
+                    <div class="team">
+                        <div class="name-detail"><img
+                                src="https://img1.hscicdn.com/image/upload/f_auto,t_s_100/lsci/db/PICTURES/CMS/313400/313419.logo.png"
+                                alt="Kolkata Knight Riders Flag" class="img flag"><a data-hover="" class="name-link" target="_self"
+                                rel="" href="/team/kolkata-knight-riders-335971">
+                                <p class="name">Kolkata Knight Riders</p>
+                            </a></div>
+                        <div class="score-detail fadeIn-enter-done"><span class="score-info"></span><span class="score">187/6</span>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="name-detail"><img
+                                src="https://img1.hscicdn.com/image/upload/f_auto,t_s_100/lsci/db/PICTURES/CMS/313400/313480.logo.png"
+                                alt="Sunrisers Hyderabad Flag" class="img flag"><a data-hover="" class="name-link" target="_self" rel=""
+                                href="/team/sunrisers-hyderabad-628333">
+                                <p class="name">Sunrisers Hyderabad</p>
+                            </a><span class="batting-indicator"></span></div>
+                        <div class="score-detail fadeIn-exit-done"><span class="score-info">(5.1/20 ov, target 188)</span><span
+                                class="score">33/2</span></div>
+                    </div>
+                </div>
+                </div>
+                <div class="run-taes-sec">
+                    <div class="current-run-rate-bro" id="current-run-rate-bro">
+                        <div class="current-run-rate">
+                            <div class="stats-secondary">Current RR</div>
+                            <div class="stats-value font-weight-bold">4.00</div>
+                        </div>
+                    </div>
+                    <div class="status-text-bro" id="startus-text-bro">
+                        <div class="status-text"><span>Sunrisers need 178 runs in 111 balls. RRR: 9.62</span></div>
+                    </div>
+                </div>
+                <div class="team-score-list" id="teams-table">
+                    <table class="table table-left mb-0">
+                        <thead>
+                            <tr>
+                                <th class="text-capitalize" colspan="1">BATSMEN</th>
+                                <th class="text-capitalize" colspan="1">R</th>
+                                <th class="text-capitalize" colspan="1">B</th>
+                                <th class="text-capitalize" colspan="1">4s</th>
+                                <th class="text-capitalize" colspan="1">6s</th>
+                                <th class="text-capitalize" colspan="1">SR</th>
+                                <th class="text-capitalize hide-on-mobile" colspan="3">THIS BOWLER</th>
+                                <th class="text-capitalize hide-on-mobile" colspan="1">LAST 5 BALLS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a data-hover="" class="player-name" target="_self" rel="" href="/player/rahul-tripathi-446763">Rahul
+                                        Tripathi<span>*</span>&nbsp;<span class="player-style">(rhb)</span></a></td>
+                                <td>18</td>
+                                <td>10</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>180.00</td>
+                                <td colspan="3" class="hide-on-mobile">6 (3b)</td>
+                                <td class="hide-on-mobile">6 (3b)</td>
+                            </tr>
+                            <tr>
+                                <td><a data-hover="" class="player-name" target="_self" rel="" href="/player/nitish-rana-604527">Nitish
+                                        Rana<span></span>&nbsp;<span class="player-style">(lhb)</span></a></td>
+                                <td>50</td>
+                                <td>37</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>135.13</td>
+                                <td colspan="3" class="hide-on-mobile">8 (3b)</td>
+                                <td class="hide-on-mobile">7 (2b)</td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th class="text-capitalize " colspan="1">BOWLERS</th>
+                                <th class="text-capitalize " colspan="1">O</th>
+                                <th class="text-capitalize " colspan="1">M</th>
+                                <th class="text-capitalize " colspan="1">R</th>
+                                <th class="text-capitalize " colspan="1">W</th>
+                                <th class="text-capitalize " colspan="1">ECON</th>
+                                <th class="text-capitalize hide-on-mobile " colspan="1">0s</th>
+                                <th class="text-capitalize hide-on-mobile " colspan="1">4s</th>
+                                <th class="text-capitalize hide-on-mobile " colspan="1">6s</th>
+                                <th class="text-capitalize hide-on-mobile " colspan="1">THIS SPELL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a data-hover="" class="player-name" target="_self" rel="" href="/player/vijay-shankar-477021">Vijay
+                                        Shankar&nbsp;<span class="player-style">(rm)</span></a></td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>14</td>
+                                <td>0</td>
+                                <td>14.00</td>
+                                <td class="hide-on-mobile">0</td>
+                                <td class="hide-on-mobile">1</td>
+                                <td class="hide-on-mobile">1</td>
+                                <td class="hide-on-mobile">1 - 0 - 14 - 0</td>
+                            </tr>
+                            <tr>
+                                <td><a data-hover="" class="player-name" target="_self" rel="" href="/player/rashid-khan-793463">Rashid
+                                        Khan&nbsp;<span class="player-style">(lbg)</span></a></td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>4.00</td>
+                                <td class="hide-on-mobile">5</td>
+                                <td class="hide-on-mobile">0</td>
+                                <td class="hide-on-mobile">0</td>
+                                <td class="hide-on-mobile">2 - 0 - 8 - 1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recent-actvity" id="recent-activities-bro">
+                    <div class="d-flex flex-row align-items-center recent-runs">
+                        <div class="font-weight-bold text-uppercase label pr-3">Recent:&nbsp;</div>
+                        <div class="runs-container">
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>1</span></div>
+                            </div>
+                            <div class="over-separator"></div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>1</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>1</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>•</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>•</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run match-comment-run-wicket"><span>W</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>•</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>5w</span></div>
+                            </div>
+                            <div class="over-separator"></div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>1</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>•</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run match-comment-run-four"><span>4</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>1</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run match-comment-run-wicket"><span>W</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>1</span></div>
+                            </div>
+                            <div class="over-separator"></div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run match-comment-run-four"><span>4</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run"><span>•</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run match-comment-run-four"><span>4</span></div>
+                            </div>
+                            <div class="match-comment-run-container">
+                                <div class="match-comment-run match-comment-run-six"><span>6</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vs-container">
+                <div class="team-a">
+                    <img src="https://images.unsplash.com/photo-1512719994953-eabf50895df7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=670&q=80" alt="">
+                </div>
+                <div class="vs-text">vs</div>
+                <div class="team-a">
+                    <img src="https://images.unsplash.com/photo-1512719994953-eabf50895df7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=670&q=80"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js').then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }).catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script src="./assets/js/score.js"></script>
+
+</body>
+</html>

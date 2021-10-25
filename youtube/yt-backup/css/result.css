@@ -1,0 +1,21 @@
+iframe {
+  width: 100%;
+  height: 50vh;
+}
+.theIframe {
+  padding: 5px;
+  background: #222;
+}
+.file-name-of-video {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.titleTop {
+  margin-bottom: 1.25rem;
+}
+a.text-decoration-none.theDownloadAnchor {
+  font-size: 14px;
+}
+main {
+  min-height: calc(100vh - 200px);
+}
